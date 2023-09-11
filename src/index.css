@@ -1,4 +1,52 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --background-light: white;
+  --background-dark: #303841; 
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title {
+  font-size: 7.5rem;
+  transition: all ease-in-out 0.2s;
+  animation: fadeIn 2s;
+}
+
+.header-main {
+  box-shadow: 10px 10px 0px 1px var(--background-dark);
+  border: solid 3px var(--background-dark);
+  max-width: 45%;
+  margin: 1rem;
+  text-align: center;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
