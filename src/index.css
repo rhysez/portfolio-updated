@@ -4,15 +4,13 @@
   /*colour scheme*/
   --background-light: white;
   --background-dark: #282a2c;
-  --highlight-green: rgb(114, 227, 114);
+  --background-mid: #5e5f5f;
+  --highlight-green: rgb(144, 229, 144);
 }
 
 @media (max-width: 900px) {
   .header {
     flex-direction: column;
-  }
-  .header-title {
-    font-size: 4rem;
   }
 }
 
@@ -39,8 +37,9 @@ html {
 body {
   margin: 0;
   padding: 0;
-  
 }
+
+/* Header */
 
 .header-container {
   display: flex;
@@ -78,7 +77,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .nav-bar {
@@ -88,6 +88,7 @@ body {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   background-color: var(--background-dark);
+  border-bottom: solid 4px var(--highlight-green);
 }
 
 .nav-list {
@@ -108,3 +109,57 @@ body {
   border-bottom: solid 2px var(--background-light);
 }
 
+/* About */
+
+@keyframes bounceText {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-0.5vh); }
+  100% { transform: translateY(0); }
+}  
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.about-front-end {
+  color: var(--background-dark);
+  font-size: 4rem;
+  text-wrap: wrap;
+  text-align: center;
+  font-weight: 300;
+  padding: 2rem;
+}
+
+.about-me {
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  width: 60%;
+}
+
+.js {
+  display: inline-block;
+  transition: all ease-in-out 0.25s;
+  animation-name: bounceText;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  color: var(--highlight-green);
+}
+
+.react {
+  display: inline-block;
+  transition: all ease-in-out 0.25s;
+  animation-name: bounceText;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  color: var(--highlight-green);
+}
