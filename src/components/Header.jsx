@@ -5,6 +5,7 @@ const Header = (props) => {
     
     const navBarButtons = [
         'About',
+        'Skills',
         'Projects',
         'Contact'
     ]

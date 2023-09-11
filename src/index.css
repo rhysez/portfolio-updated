@@ -1,11 +1,19 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
+  /*colour scheme*/
   --background-light: white;
   --background-dark: #282a2c;
-  --background-mid: #444547;
   --highlight-green: rgb(114, 227, 114);
-  
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+  }
+  .header-title {
+    font-size: 4rem;
+  }
 }
 
 @keyframes fadeIn {
@@ -31,6 +39,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  
 }
 
 .header-container {
@@ -56,10 +65,10 @@ body {
   animation-timing-function: ease;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  background-color: var(--highlight-green);
 }
 
 .header-main {
-  max-width: 45%;
   margin: 1rem;
   text-align: center;
   transition: all ease-in-out 0.2s;
@@ -78,6 +87,7 @@ body {
   margin: 0;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  background-color: var(--background-dark);
 }
 
 .nav-list {
@@ -86,8 +96,15 @@ body {
   list-style-type: none;
   font-size: 1.5rem;
   font-weight: 500;
+  color: var(--background-light);
 }
 
 .nav-button {
   cursor: pointer;
+  border-bottom: solid 2px var(--background-dark);
 }
+
+.nav-button:hover {
+  border-bottom: solid 2px var(--background-light);
+}
+
