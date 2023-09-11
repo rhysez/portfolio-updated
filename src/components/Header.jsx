@@ -1,3 +1,6 @@
+import Icon from '@mdi/react';
+import { mdiXml } from '@mdi/js';
+
 const Header = (props) => {
     
     const navBarButtons = [
@@ -16,8 +19,11 @@ const Header = (props) => {
                         {navBarButtonsMapped}
                     </ul>
                 </div>
-                <div className='header-main'>
-                    <h2 className='header-title'>Rhys Hodgson.</h2>
+                <div className='header'>
+                    <div className='header-main'>
+                        <h2 className='header-title'>Rhys Hodgson</h2>
+                    </div>
+                    <Icon className='html-icon' path={mdiXml} size={8.5} />
                 </div>
             </div>
         </>

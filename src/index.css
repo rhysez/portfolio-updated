@@ -2,8 +2,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   --background-light: white;
-  --background-dark: #303841; 
+  --background-dark: #282a2c;
+  --background-mid: #444547;
   --highlight-green: rgb(114, 227, 114);
+  
 }
 
 @keyframes fadeIn {
@@ -14,6 +16,12 @@
   100% {
     opacity: 1;
   }
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
 }
 
 html {
@@ -34,22 +42,42 @@ body {
   font-size: 7.5rem;
   transition: all ease-in-out 0.2s;
   animation: fadeIn 2s;
+  color: var(--background-dark);
+  box-shadow: 10px 10px 0px 1px var(--background-dark);
+  border: solid 3px var(--background-dark);
+  padding: 2rem;
+}
+
+.html-icon {
+  box-shadow: 10px 10px 0px 1px var(--background-dark);
+  border: solid 3px var(--background-dark);
+  transition: all ease-in-out 0.25s;
+  animation-name: bounce;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .header-main {
-  box-shadow: 10px 10px 0px 1px var(--background-dark);
-  border: solid 3px var(--background-dark);
   max-width: 45%;
   margin: 1rem;
   text-align: center;
   transition: all ease-in-out 0.2s;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
 .nav-bar {
   display: flex;
   justify-content: flex-end;
   margin: 0;
-  padding: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .nav-list {
