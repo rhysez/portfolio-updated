@@ -6,7 +6,7 @@ const Header = (props) => {
         'Contact'
     ]
 
-    const navBarButtonsMapped = navBarButtons.map((button, index) => <li key={index}>{button}</li>)
+    const navBarButtonsMapped = navBarButtons.map((button, index) => <li key={index} className='nav-button'>{button}</li>)
 
     return (
         <>

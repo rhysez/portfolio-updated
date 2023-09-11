@@ -3,6 +3,7 @@
 
   --background-light: white;
   --background-dark: #303841; 
+  --highlight-green: rgb(114, 227, 114);
 }
 
 @keyframes fadeIn {
@@ -17,6 +18,11 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .header-container {
@@ -36,11 +42,14 @@ html {
   max-width: 45%;
   margin: 1rem;
   text-align: center;
+  transition: all ease-in-out 0.2s;
 }
 
 .nav-bar {
   display: flex;
   justify-content: flex-end;
+  margin: 0;
+  padding: 1.5rem;
 }
 
 .nav-list {
@@ -49,4 +58,8 @@ html {
   list-style-type: none;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.nav-button {
+  cursor: pointer;
 }
