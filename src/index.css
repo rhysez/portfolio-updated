@@ -151,6 +151,8 @@ body {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   color: var(--highlight-green);
+  font-weight: 500;
+  font-size: 4rem;
 }
 
 .react {
@@ -162,4 +164,19 @@ body {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   color: var(--highlight-green);
+  font-weight: 500;
+  font-size: 4rem;
 }
+
+.hello {
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+.contents-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Skills */
+
