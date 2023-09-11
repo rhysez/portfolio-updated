@@ -12,6 +12,14 @@
   .header {
     flex-direction: column;
   }
+
+  .about-me-body {
+    flex-direction: column;
+  }
+
+  .about-icon {
+    width: 35%;
+  }
 }
 
 @keyframes fadeIn {
@@ -139,8 +147,14 @@ body {
   font-weight: 300;
   padding: 1rem;
   margin: 1rem;
-  text-align: center;
+  text-align: left;
   width: 60%;
+}
+
+.about-me-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .js {
@@ -176,6 +190,13 @@ body {
 .contents-number {
   font-size: 2.5rem;
   font-weight: 700;
+}
+
+.about-icon {
+  filter: invert(100%) sepia(14%) saturate(4059%) hue-rotate(49deg) brightness(89%) contrast(103%);
+  margin: 0;
+  padding: 0;
+  max-width: 20%;
 }
 
 /* Skills */
