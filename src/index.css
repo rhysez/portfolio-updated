@@ -33,8 +33,13 @@
   }
 }
 
-@keyframes zoomIn {
+@keyframes zoomInLeft {
   0%   { transform: translateX(-50px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes zoomInRight {
+  0%   { transform: translateX(50px); }
   100% { transform: translateX(0); }
 }
 
@@ -85,11 +90,13 @@ body {
   text-align: left;
   margin: 0;
   transition: all ease-in-out 0.25s;
-  animation: zoomIn 2s;
+  animation: zoomInLeft 2s;
 }
 
 .header-image {
   max-width: 20vw;
+  transition: all ease-in-out 0.25s;
+  animation: zoomInRight 2s;
 }
 
 .header-main {
@@ -166,7 +173,7 @@ body {
 
 .about-me {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 200;
   padding: 2rem;
   margin: 1rem;
   text-align: left;
@@ -184,18 +191,17 @@ body {
 .js {
   display: inline-block;
   color: var(--highlight-blue);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .react {
   display: inline-block;
   color: var(--highlight-blue);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .hello {
   font-weight: 500;
-  font-size: 4rem;
 }
 
 .contents-number {

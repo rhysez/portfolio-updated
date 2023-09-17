@@ -11,8 +11,8 @@ const About = (props) => {
             <span className="react">React</span> developer with a passion for
             building beautiful, responsive web applications. 
             With a strong understanding of object oriented programming, I can
-            build apps that are flexible and highly scalable. <br />
-            When I'm not coding, I like to spend my spare time gaming or reading a book
+            build apps that are flexible and highly scalable. 
+            When I'm not coding, I like to spend my spare time gaming, exercising or reading a book
             by the sea near my home town. 
           </p>
         </div>
