@@ -5,7 +5,8 @@
   --background-light: white;
   --background-dark: #282a2c;
   --background-mid: #5e5f5f;
-  --highlight-green: rgb(144, 229, 144);
+  --border-dark: rgba(229, 227, 227, 0.365);
+  --highlight-blue: rgb(88, 177, 250);
 }
 
 @media (max-width: 900px) {
@@ -32,10 +33,23 @@
   }
 }
 
-@keyframes bounce {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-20px); }
-  100% { transform: translateY(0); }
+@keyframes zoomIn {
+  0%   { transform: translateX(-50px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.97);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.97);
+	}
 }
 
 html {
@@ -55,29 +69,31 @@ body {
 }
 
 .header-title {
-  font-size: 7.5rem;
+  font-size: 10rem;
   transition: all ease-in-out 0.2s;
   animation: fadeIn 2s;
   color: var(--background-dark);
-  box-shadow: 10px 10px 0px 1px var(--background-dark);
-  border: solid 3px var(--background-dark);
-  padding: 2rem;
+  border-radius: 20px;
+  text-align: left;
+  margin-bottom: 0;
 }
 
-.html-icon {
-  box-shadow: 10px 10px 0px 1px var(--background-dark);
-  border: solid 3px var(--background-dark);
+.header-subtitle {
+  font-size: 5rem;
+  color: var(--highlight-blue);
+  border-radius: 20px;
+  text-align: left;
+  margin: 0;
   transition: all ease-in-out 0.25s;
-  animation-name: bounce;
-  animation-timing-function: ease;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  background-color: var(--highlight-green);
+  animation: zoomIn 2s;
+}
+
+.header-image {
+  max-width: 20vw;
 }
 
 .header-main {
   margin: 1rem;
-  text-align: center;
   transition: all ease-in-out 0.2s;
 }
 
@@ -85,18 +101,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   padding: 1rem;
+  margin-top: 5rem;
+  gap: 23.5rem;
 }
 
 .nav-bar {
   display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 98.5vw;
   justify-content: flex-end;
   margin: 0;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   background-color: var(--background-dark);
-  border-bottom: solid 4px var(--highlight-green);
+  border-bottom: solid 4px var(--highlight-blue);
 }
 
 .nav-list {
@@ -130,6 +151,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 5rem;
 }
 
 
@@ -145,10 +167,12 @@ body {
 .about-me {
   font-size: 3rem;
   font-weight: 300;
-  padding: 1rem;
+  padding: 2rem;
   margin: 1rem;
   text-align: left;
   width: 60%;
+  border-radius: 20px;
+  background-color: var(--border-dark);
 }
 
 .about-me-body {
@@ -159,27 +183,14 @@ body {
 
 .js {
   display: inline-block;
-  transition: all ease-in-out 0.25s;
-  animation-name: bounceText;
-  animation-timing-function: ease;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  color: var(--highlight-green);
+  color: var(--highlight-blue);
   font-weight: 500;
-  font-size: 4rem;
 }
 
 .react {
   display: inline-block;
-  transition: all ease-in-out 0.25s;
-  animation-name: bounceText;
-  animation-timing-function: ease;
-  animation-delay: 1s;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  color: var(--highlight-green);
+  color: var(--highlight-blue);
   font-weight: 500;
-  font-size: 4rem;
 }
 
 .hello {

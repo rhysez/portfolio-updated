@@ -1,14 +1,12 @@
-import Icon from '@mdi/react';
-import { mdiMonitorCellphone } from '@mdi/js';
 
 const About = (props) => {
   return (
     <>
       <div className="about-container">
-        <p className="about-front-end">&lt; <span className='contents-number'>0.1</span> Front End Developer /&gt;</p>
+        <div></div>
         <div className='about-me-body'>
           <p className="about-me">
-            <span className='hello'>Hello!</span> My name is Rhys, and I'm from Cornwall, United Kingdom. <br />
+            <span className='hello'>Hello!</span> As you could already tell, my name is Rhys, and I'm from Cornwall, United Kingdom. <br />
             I'm a proficient <span className="js">JavaScript</span> and{" "}
             <span className="react">React</span> developer with a passion for
             building beautiful, responsive web applications. 
@@ -17,8 +15,6 @@ const About = (props) => {
             When I'm not coding, I like to spend my spare time gaming or reading a book
             by the sea near my home town. 
           </p>
-
-          <Icon path={mdiMonitorCellphone} className='about-icon' />
         </div>
       </div>
     </>
