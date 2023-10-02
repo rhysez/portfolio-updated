@@ -137,6 +137,12 @@ body {
   border-bottom: solid 4px var(--highlight-blue);
 }
 
+@media (max-width: 900px){
+  .nav-bar {
+    justify-content: center;
+  }
+}
+
 .nav-list {
   display: flex;
   gap: 2rem;
@@ -168,7 +174,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 
@@ -251,9 +257,7 @@ body {
 .technologies {
   display: flex;
   justify-content: center;
-  gap: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
@@ -261,9 +265,17 @@ body {
   max-width: 7rem;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
-  padding: 0.5rem;
 }
 
 .skills-image:hover {
   transform: scale(1.15);
+}
+
+@keyframes scrollImages {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }

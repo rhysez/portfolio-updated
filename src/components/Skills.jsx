@@ -1,77 +1,94 @@
-import { useState } from 'react'
+import { useState } from "react";
 
 const Skills = (props) => {
-
-  const [selectedSkill, setSelectedSkill] = useState('Technologies I work with...')
-  const [skillColor, setSkillColor] = useState('var(--background-light)')
+  const [selectedSkill, setSelectedSkill] = useState(
+    "Front end technologies I use...."
+  );
+  const [skillColor, setSkillColor] = useState("var(--background-light)");
 
   const technologies = [
     {
       name: "HTML - Markup",
-      color: 'orange',
+      color: "orange",
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     },
     {
       name: "CSS - Styling",
-      color: 'dodgerblue',
+      color: "dodgerblue",
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     },
     {
       name: "JavaScript - Programming",
-      color: 'yellow',
+      color: "yellow",
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     },
     {
       name: "React - Library",
-      color: 'dodgerblue',
+      color: "dodgerblue",
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
     {
       name: "Git - Version control",
-      color: 'mediumseagreen',
+      color: "mediumseagreen",
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     },
     {
       name: "Jest - Testing",
-      color: 'violet',
+      color: "violet",
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
     },
     {
       name: "Webpack - Bundler",
-      color: 'dodgerblue',
+      color: "dodgerblue",
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
     },
     {
       name: "Bash - Command line",
-      color: 'lightgreen',
+      color: "lightgreen",
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
     },
+    {
+      name: "Chrome - Developer tools",
+      color: "yellow",
+      source:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg",
+    },
   ];
 
-  const changeSkill = (skill) => {
-    setSelectedSkill(skill.name)
-    setSkillColor(skill.color)
-  }
+  const handleChangeSkill = (skill) => {
+    setSelectedSkill(skill.name);
+    setSkillColor(skill.color);
+  };
 
   const technologiesMapped = technologies.map((item) => {
-    return <img className='skills-image' src={item.source} alt="skill" onClick={() => { changeSkill(item) }} />
-  })
+    return (
+      <img
+        className="skills-image"
+        src={item.source}
+        alt="skill"
+        onClick={() => {
+          handleChangeSkill(item);
+        }}
+      />
+    );
+  });
 
   return (
     <>
       <div className="skills-container">
-        <h2 className="skills-header" style={{color: skillColor}}>{selectedSkill}</h2> 
-        <div className="technologies">
-          {technologiesMapped}
-        </div>
+        <h2 className="skills-header" style={{ color: skillColor }}>
+          {selectedSkill}
+        </h2>
+        <div className="technologies">{technologiesMapped}</div>
+        
       </div>
     </>
   );

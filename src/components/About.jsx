@@ -6,7 +6,7 @@ const About = (props) => {
         <div></div>
         <div className='about-me-body'>
           <p className="about-me">
-            <span className='hello'>Hello!</span> As you could already tell, my name is Rhys, and I'm from Cornwall, United Kingdom. <br />
+            Welcome to my professional online portfolio.
             I'm a proficient <span className="js">JavaScript</span> and{" "}
             <span className="react">React</span> developer with a passion for
             building beautiful, responsive web applications. 
