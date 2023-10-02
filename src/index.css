@@ -5,7 +5,7 @@
   --background-light: white;
   --background-dark: #282a2c;
   --background-mid: #5e5f5f;
-  --border-dark: rgba(229, 227, 227, 0.365);
+  --border-dark: rgba(240, 238, 238, 0.365);
   --highlight-blue: rgb(88, 177, 250);
 }
 
@@ -21,6 +21,7 @@
   .about-icon {
     width: 35%;
   }
+
 }
 
 @keyframes fadeIn {
@@ -104,6 +105,15 @@ body {
   transition: all ease-in-out 0.2s;
 }
 
+@media (max-width: 900px) {
+  .header-title, .header-subtitle {
+    text-align: center;
+  }
+  .header-image {
+    max-width: 50vw;
+  }
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -182,6 +192,12 @@ body {
   background-color: var(--border-dark);
 }
 
+@media (max-width: 900px){
+  .about-me {
+    width: 80%;
+  }
+}
+
 .about-me-body {
   display: flex;
   align-items: center;
@@ -218,3 +234,27 @@ body {
 
 /* Skills */
 
+.skills-container {
+  text-align: center;
+  margin-top: 10%;
+  background-color: var(--background-dark);
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.skills-header {
+  font-size: 5rem;
+  color: var(--background-light);
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.skills-image {
+  max-width: 7rem;
+}
