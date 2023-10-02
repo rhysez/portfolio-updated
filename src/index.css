@@ -245,6 +245,7 @@ body {
 .skills-header {
   font-size: 5rem;
   color: var(--background-light);
+  transition: all ease-in-out 0.5s;
 }
 
 .technologies {
@@ -253,8 +254,16 @@ body {
   gap: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .skills-image {
   max-width: 7rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+  padding: 0.5rem;
+}
+
+.skills-image:hover {
+  transform: scale(1.15);
 }
