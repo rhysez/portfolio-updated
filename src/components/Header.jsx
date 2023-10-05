@@ -1,9 +1,9 @@
 
 const Header = (props) => {
-  const navBarButtons = ["About", "Skills", "Projects", "Contact"];
+  const navBarButtons = ["About", "Tech Stack", "Projects", "Contact"];
 
   const navBarButtonsMapped = navBarButtons.map((button, index) => (
-    <li key={index} className="nav-button">
+    <li key={index} id={index} className="nav-button">
       {button}
     </li>
   ));

@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Skills = (props) => {
   const [selectedSkill, setSelectedSkill] = useState(
-    "Front end technologies I use...."
+    "Front end tech stack"
   );
   const [skillColor, setSkillColor] = useState("var(--background-light)");
 
@@ -68,12 +68,13 @@ const Skills = (props) => {
     setSkillColor(skill.color);
   };
 
-  const technologiesMapped = technologies.map((item) => {
+  const technologiesMapped = technologies.map((item, index) => {
     return (
       <img
         className="skills-image"
         src={item.source}
         alt="skill"
+        key={index}
         onClick={() => {
           handleChangeSkill(item);
         }}
@@ -88,7 +89,6 @@ const Skills = (props) => {
           {selectedSkill}
         </h2>
         <div className="technologies">{technologiesMapped}</div>
-        
       </div>
     </>
   );

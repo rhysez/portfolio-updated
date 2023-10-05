@@ -1,9 +1,10 @@
 
 const About = (props) => {
+ 
   return (
     <>
       <div className="about-container">
-        <div></div>
+        <div className='about-me-header'>About</div>
         <div className='about-me-body'>
           <p className="about-me">
             Welcome to my professional online portfolio.
