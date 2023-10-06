@@ -1,18 +1,18 @@
+import Icon from '@mdi/react';
+import { mdiMenu, mdiGithub, mdiInstagram } from '@mdi/js';
 
 const Header = (props) => {
-  const navBarButtons = ["About", "Tech Stack", "Projects", "Contact"];
-
-  const navBarButtonsMapped = navBarButtons.map((button, index) => (
-    <li key={index} id={index} className="nav-button">
-      {button}
-    </li>
-  ));
+  
 
   return (
     <>
       <div className="header-container">
         <div className="nav-bar">
-          <ul className="nav-list">{navBarButtonsMapped}</ul>
+          <Icon path={mdiMenu} size={2} className='hamburger-menu' onClick={props.openHamburger} />
+          <div className='socials'>
+            <Icon path={mdiInstagram} size={2} className='hamburger-menu' />
+            <Icon path={mdiGithub} size={2} className='hamburger-menu' />
+          </div>
         </div>
         <div className="header">
           <div className="header-main">

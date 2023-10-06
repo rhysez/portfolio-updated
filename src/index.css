@@ -139,10 +139,10 @@ body {
   top: 0;
   z-index: 1;
   width: 98.5vw;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 1.25rem;
   background-color: var(--background-dark);
   border-bottom: solid 4px var(--highlight-blue);
 }
@@ -153,24 +153,46 @@ body {
   }
 }
 
+.nav-list-container {
+  display: flex;
+  justify-content: center;
+}
+
 .nav-list {
   display: flex;
   gap: 2rem;
   list-style-type: none;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 500;
-  color: var(--background-light);
+  color: var(--background-dark);
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  animation: growIn 1s;
 }
 
 .nav-button {
   cursor: pointer;
   transition: all ease-in-out 0.25s;
-  padding: 0.5rem;
+  padding: 0.75rem;
 }
 
 .nav-button:hover {
-  background-color: var(--highlight-blue);
-  border-radius: 20px;
+  transform: scale(1.2);
+}
+
+.hamburger-menu {
+  color: white;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.hamburger-menu:hover {
+  color: var(--highlight-blue);
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
 }
 
 /* About */
@@ -186,7 +208,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 .about-me-header {
@@ -200,6 +222,7 @@ body {
   margin: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border: solid 2px var(--highlight-blue);
   font-size: 3rem;
   font-weight: 600;
 }
@@ -223,6 +246,7 @@ body {
   margin-top: 0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  border: solid 2px var(--highlight-blue);
 }
 
 @media (max-width: 900px){
