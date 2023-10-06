@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Marck+Script&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
@@ -5,7 +7,7 @@
   --background-light: white;
   --background-dark: #282a2c;
   --background-mid: #5e5f5f;
-  --border-dark: rgba(240, 238, 238, 0.365);
+  --border-dark: rgba(240, 238, 238);
   --highlight-blue: rgb(88, 177, 250);
 }
 
@@ -105,23 +107,17 @@ body {
 }
 
 .header-image {
-  max-width: 20vw;
+  max-width: 15vw;
   transition: all ease-in-out 0.25s;
-  animation: zoomInRight 2s;
+  animation: pulse 2s infinite;
+  margin-top: 4rem;
+  background-color: var(--highlight-blue);
+  border-radius: 50%;
 }
 
 .header-main {
   margin: 1rem;
   transition: all ease-in-out 0.2s;
-}
-
-@media (max-width: 900px) {
-  .header-title, .header-subtitle {
-    text-align: center;
-  }
-  .header-image {
-    max-width: 50vw;
-  }
 }
 
 .header {
@@ -131,6 +127,19 @@ body {
   padding: 1rem;
   margin-top: 5rem;
   gap: 23.5rem;
+}
+
+@media (max-width: 900px) {
+  .header-title, .header-subtitle {
+    text-align: center;
+  }
+  .header-image {
+    max-width: 50vw;
+    margin-top: 0;
+  }
+  .header {
+    gap: 7.5rem;
+  }
 }
 
 .nav-bar {
@@ -143,8 +152,8 @@ body {
   align-items: center;
   margin: 0;
   padding: 1.25rem;
-  background-color: var(--background-dark);
-  border-bottom: solid 4px var(--highlight-blue);
+  background-color: var(--background-light);
+  border-bottom: solid 2px var(--border-dark);
 }
 
 .nav-list-container {
@@ -154,7 +163,8 @@ body {
 
 .nav-list {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  gap: 3rem;
   list-style-type: none;
   font-size: 2.5rem;
   font-weight: 500;
@@ -162,20 +172,31 @@ body {
   flex-wrap: wrap;
   margin-top: 10rem;
   animation: growIn 1s;
+  transition: all ease-in-out 0.5s;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 20px;
+}
+
+.nav-list:hover {
+  background-color: var(--border-dark);
 }
 
 .nav-button {
   cursor: pointer;
   transition: all ease-in-out 0.25s;
-  padding: 0.75rem;
+  color: var(--background-dark);
 }
 
 .nav-button:hover {
   transform: scale(1.2);
+  color: var(--highlight-blue);
 }
 
 .hamburger-menu {
-  color: white;
+  color: var(--background-dark);
   cursor: pointer;
   transition: all ease-in-out 0.2s;
 }
@@ -184,9 +205,14 @@ body {
   color: var(--highlight-blue);
 }
 
+.hamburger {
+  margin-left: 15%;
+}
+
 .socials {
   display: flex;
   gap: 1rem;
+  margin-right: 15%;
 }
 
 /* About */
@@ -202,24 +228,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 10rem;
-}
-
-.about-me-header {
-  background-color: var(--highlight-blue);
-  text-align: center;
-  width: 60%;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin: 0;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border: solid 2px var(--highlight-blue);
-  font-size: 3rem;
-  font-weight: 600;
-  animation: growIn 1s;
+  margin-top: 5rem;
 }
 
 .about-front-end {
@@ -232,16 +241,13 @@ body {
 }
 
 .about-me {
+  font-family: 'Coming Soon', 'Marck Script', Inter, Impact, sans-serif;
   font-size: 3rem;
   font-weight: 200;
   padding: 2rem;
   text-align: left;
   width: 60%;
-  background-color: var(--border-dark);
   margin-top: 0;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border: solid 2px var(--highlight-blue);
   animation: growIn 1s;
 }
 
@@ -290,7 +296,7 @@ body {
 
 .skills-container {
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 5rem;
   background-color: var(--background-dark);
   padding-top: 2.5%;
   padding-bottom: 4.5%;

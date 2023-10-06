@@ -32,7 +32,19 @@ function App() {
         setToggleContact(false)
     }
 
-    console.log(e.target.textContent)
+    if (e.target.textContent === 'Projects') {
+      setToggleAbout(false)
+      setToggleSkills(false)
+      setToggleProjects(true)
+      setToggleContact(false)
+    }
+
+    if (e.target.textContent === 'Contact') {
+      setToggleAbout(false)
+      setToggleSkills(false)
+      setToggleProjects(false)
+      setToggleContact(true)
+    } 
   }
 
   return (
