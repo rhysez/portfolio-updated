@@ -147,12 +147,6 @@ body {
   border-bottom: solid 4px var(--highlight-blue);
 }
 
-@media (max-width: 900px){
-  .nav-bar {
-    justify-content: center;
-  }
-}
-
 .nav-list-container {
   display: flex;
   justify-content: center;
@@ -225,6 +219,7 @@ body {
   border: solid 2px var(--highlight-blue);
   font-size: 3rem;
   font-weight: 600;
+  animation: growIn 1s;
 }
 
 .about-front-end {
@@ -247,6 +242,7 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: solid 2px var(--highlight-blue);
+  animation: growIn 1s;
 }
 
 @media (max-width: 900px){
@@ -294,7 +290,7 @@ body {
 
 .skills-container {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 10rem;
   background-color: var(--background-dark);
   padding-top: 2.5%;
   padding-bottom: 4.5%;
@@ -304,6 +300,7 @@ body {
   font-size: 5rem;
   color: var(--background-light);
   transition: all ease-in-out 0.5s;
+  animation: growIn 1s;
 }
 
 .technologies {
@@ -313,6 +310,7 @@ body {
   flex-wrap: wrap;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  animation: growIn 1s;
 }
 
 .skills-image {
