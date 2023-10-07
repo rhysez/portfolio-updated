@@ -1,10 +1,8 @@
 import { useState } from "react";
 
 const Skills = (props) => {
-  const [selectedSkill, setSelectedSkill] = useState(
-    "Front end tech stack"
-  );
-  const [skillColor, setSkillColor] = useState("var(--background-light)");
+  const [selectedSkill, setSelectedSkill] = useState("Front end tech stack");
+  const [skillColor, setSkillColor] = useState("var(--background-dark)");
 
   const technologies = [
     {
@@ -85,9 +83,7 @@ const Skills = (props) => {
   return (
     <>
       <div className="skills-container" style={{ backgroundColor: skillColor }}>
-        <h2 className="skills-header">
-          {selectedSkill}
-        </h2>
+        <h2 className="skills-header">{selectedSkill}</h2>
         <div className="technologies">{technologiesMapped}</div>
       </div>
     </>
