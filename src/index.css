@@ -300,11 +300,15 @@ body {
   background-color: var(--background-dark);
   padding-top: 2.5%;
   padding-bottom: 4.5%;
+  width: 70%;
+  border-radius: 20px;
+  margin: auto;
+  animation: growIn 1s;
+  transition: all ease-in-out 0.5s;
 }
 
 .skills-header {
   font-size: 5rem;
-  color: var(--background-light);
   transition: all ease-in-out 0.5s;
   animation: growIn 1s;
 }

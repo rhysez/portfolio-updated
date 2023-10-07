@@ -84,8 +84,8 @@ const Skills = (props) => {
 
   return (
     <>
-      <div className="skills-container">
-        <h2 className="skills-header" style={{ color: skillColor }}>
+      <div className="skills-container" style={{ backgroundColor: skillColor }}>
+        <h2 className="skills-header">
           {selectedSkill}
         </h2>
         <div className="technologies">{technologiesMapped}</div>

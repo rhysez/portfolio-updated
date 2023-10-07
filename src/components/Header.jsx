@@ -10,8 +10,8 @@ const Header = (props) => {
         <div className="nav-bar">
           <Icon path={mdiMenu} size={2} className='hamburger hamburger-menu' onClick={props.openHamburger} />
           <div className='socials'>
-            <Icon path={mdiInstagram} size={2} className='hamburger-menu' />
-            <Icon path={mdiGithub} size={2} className='hamburger-menu' />
+            <a href="https://www.instagram.com/rhyshodgsondev/"><Icon path={mdiInstagram} size={2} className='hamburger-menu' /></a>
+            <a href="https://github.com/rhysez"><Icon path={mdiGithub} size={2} className='hamburger-menu' /></a>
           </div>
         </div>
         <div className="header">
