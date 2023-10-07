@@ -369,19 +369,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--highlight-blue);
   padding: 1rem;
   height: 28rem;
   transition: all ease-in-out 0.2s;
   cursor: pointer;
   background-size: cover;
-  background-repeat:   no-repeat;
+  background-repeat: no-repeat;
   background-position: center center;
   border-radius: 20px;
+  box-shadow: 0px 0px 1px var(--background-dark);
 }
 
 .project:hover {
-  transform: scale(1.025)
+  transform: scale(1.025);
 }
 
 @media (max-width: 900px){
