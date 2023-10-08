@@ -7,7 +7,6 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
-  // conditionally renders a component if state is true
   const [toggleAbout, setToggleAbout] = useState(false);
   const [toggleSkills, setToggleSkills] = useState(false);
   const [toggleProjects, setToggleProjects] = useState(false);

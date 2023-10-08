@@ -7,7 +7,7 @@
   --background-light: white;
   --background-dark: #282a2c;
   --background-mid: #5e5f5f;
-  --border-dark: rgba(240, 238, 238);
+  --border-dark: rgb(248, 247, 247);
   --highlight-blue: rgb(88, 177, 250);
 }
 
@@ -187,7 +187,7 @@ body {
   padding-right: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .nav-list:hover {
@@ -367,17 +367,50 @@ body {
 
 .project {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  padding: 1rem;
   height: 28rem;
   transition: all ease-in-out 0.2s;
   cursor: pointer;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 20px;
-  box-shadow: 0px 0px 1px var(--background-dark);
+  box-shadow: 0px 0px 10px var(--background-dark);
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--background-light);
+}
+
+.project-name {
+  text-align: center;
+  color: var(--background-light);
+  background-color: var(--highlight-blue);
+  font-size: 3rem;
+  margin: 0;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  transition: all ease-in-out 0.2s;
+}
+
+.project-description {
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: var(--background-dark);
+  flex-grow: 1;
+  margin: 0;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: all ease-in-out 0.2s;
+}
+
+a {
+  text-decoration: none;
 }
 
 .project:hover {
