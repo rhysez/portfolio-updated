@@ -51,6 +51,7 @@ function App() {
       {toggleAbout ? <About /> : null}
       {toggleSkills ? <Skills /> : null}
       {toggleProjects ? <Projects /> : null}
+      {toggleContact ? <Contact /> : null}
     </>
   );
 }

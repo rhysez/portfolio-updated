@@ -48,13 +48,13 @@ const Projects = (props) => {
 
   const handleHoverIn = (header, description, project) => {
     header.textContent = project.name;
-    description.textContent = project.description
+    description.textContent = project.description;
     isHovered = true;
   };
 
   const handleHoverOut = (header, description) => {
     header.textContent = "";
-    description.textContent = ""
+    description.textContent = "";
     isHovered = false;
   };
 
@@ -66,14 +66,21 @@ const Projects = (props) => {
           key={index}
           style={{ backgroundImage: `url(${item.image})` }}
           onMouseEnter={() => {
-            handleHoverIn(document.getElementById(item.name), document.getElementById(item.description), item);
+            handleHoverIn(
+              document.getElementById(item.name),
+              document.getElementById(item.description),
+              item
+            );
           }}
           onMouseLeave={() => {
-            handleHoverOut(document.getElementById(item.name), document.getElementById(item.description));
+            handleHoverOut(
+              document.getElementById(item.name),
+              document.getElementById(item.description)
+            );
           }}
         >
           <h3 className="project-name" id={item.name}></h3>
-          <p className='project-description' id={item.description}></p>
+          <p className="project-description" id={item.description}></p>
         </div>
       </a>
     );

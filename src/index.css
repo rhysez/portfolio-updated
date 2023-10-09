@@ -3,12 +3,13 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  /*colour scheme*/
+  /*color scheme*/
   --background-light: white;
   --background-dark: #282a2c;
   --background-mid: #5e5f5f;
   --border-dark: rgb(248, 247, 247);
   --highlight-blue: rgb(88, 177, 250);
+  --highlight-green: rgb(66, 196, 49);
 }
 
 @media (max-width: 900px) {
@@ -421,4 +422,18 @@ a {
   .projects-container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+/* Contact */
+
+.contact-container {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.looking-for-work {
+  font-size: 2rem;
 }
