@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Marck+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&family=Marck+Script&display=swap");
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -9,7 +9,7 @@
   --background-mid: #5e5f5f;
   --border-dark: rgb(248, 247, 247);
   --highlight-blue: rgb(88, 177, 250);
-  --highlight-green: rgb(66, 196, 49);
+  --highlight-green: rgb(90, 236, 71);
 }
 
 @media (max-width: 900px) {
@@ -24,7 +24,6 @@
   .about-icon {
     width: 35%;
   }
-
 }
 
 @keyframes fadeIn {
@@ -39,46 +38,54 @@
 
 @keyframes growIn {
   0% {
-    transform: scale(0)
+    transform: scale(0);
   }
 
   100% {
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 
 @keyframes shrinkOut {
   0% {
-    transform: scale(1)
+    transform: scale(1);
   }
 
   100% {
-    transform: scale(0)
+    transform: scale(0);
   }
 }
 
 @keyframes zoomInLeft {
-  0%   { transform: translateX(-100px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes zoomInRight {
-  0%   { transform: translateX(50px); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes pulse {
-	0% {
-		transform: scale(0.97);
-	}
+  0% {
+    transform: scale(0.97);
+  }
 
-	50% {
-		transform: scale(1);
-	}
+  50% {
+    transform: scale(1);
+  }
 
-	100% {
-		transform: scale(0.97);
-	}
+  100% {
+    transform: scale(0.97);
+  }
 }
 
 html {
@@ -141,7 +148,8 @@ body {
 }
 
 @media (max-width: 900px) {
-  .header-title, .header-subtitle {
+  .header-title,
+  .header-subtitle {
     text-align: center;
   }
   .header-image {
@@ -159,7 +167,7 @@ body {
   top: 0;
   z-index: 1;
   width: 98.5vw;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin: 0;
   padding: 1.25rem;
@@ -229,10 +237,16 @@ body {
 /* About */
 
 @keyframes bounceText {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-0.5vh); }
-  100% { transform: translateY(0); }
-}  
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .about-container {
   display: flex;
@@ -252,7 +266,7 @@ body {
 }
 
 .about-me {
-  font-family: 'Coming Soon', 'Marck Script', Inter, Impact, sans-serif;
+  font-family: "Coming Soon", "Marck Script", Inter, Impact, sans-serif;
   font-size: 3rem;
   font-weight: 200;
   padding: 2rem;
@@ -262,7 +276,7 @@ body {
   animation: growIn 1s;
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
   .about-me,
   .about-me-header {
     width: 80%;
@@ -297,7 +311,8 @@ body {
 }
 
 .about-icon {
-  filter: invert(100%) sepia(14%) saturate(4059%) hue-rotate(49deg) brightness(89%) contrast(103%);
+  filter: invert(100%) sepia(14%) saturate(4059%) hue-rotate(49deg)
+    brightness(89%) contrast(103%);
   margin: 0;
   padding: 0;
   max-width: 20%;
@@ -418,7 +433,7 @@ a {
   transform: scale(1.025);
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
   .projects-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -432,8 +447,22 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: growIn 1s;
+  transition: all ease-in-out 0.5s;
 }
 
 .looking-for-work {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 80%;
+}
+
+.contact-info {
+  font-size: 2.5rem;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0;
+  text-align: center;
 }
