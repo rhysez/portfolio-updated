@@ -27,7 +27,7 @@ const Header = (props) => {
             <h2 className="header-subtitle">A Front End Developer.</h2>
           </div>
           <img
-            src="/public/memoji.png"
+            src="/memoji.png"
             alt="man at desk"
             className="header-image"
           />
