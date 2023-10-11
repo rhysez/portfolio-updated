@@ -1,5 +1,5 @@
 import Icon from "@mdi/react";
-import { mdiMenu, mdiGithub, mdiInstagram } from "@mdi/js";
+import { mdiInstagram, mdiGithub, mdiLinkedin } from "@mdi/js";
 
 const Header = (props) => {
   return (
@@ -7,6 +7,9 @@ const Header = (props) => {
       <div className="header-container">
         <div className="nav-bar">
           <div className="socials">
+            <a href="https://www.linkedin.com/in/rhys-hodgson-8262b3218/" target="_blank">
+              <Icon path={mdiLinkedin} size={2} className="hamburger-menu" />
+            </a>
             <a href="https://www.instagram.com/rhyshodgsondev/" target="_blank">
               <Icon path={mdiInstagram} size={2} className="hamburger-menu" />
             </a>

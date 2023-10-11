@@ -441,6 +441,26 @@ a {
 
 /* Contact */
 
+.contact-header-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.lets, .connect {
+  font-size: 5rem;
+}
+
+.lets {
+  color: var(--background-dark);
+  animation: zoomInLeft 1s;
+}
+
+.connect {
+  color: var(--highlight-blue);
+  animation: zoomInRight 1s;
+}
+
 .contact-container {
   margin: auto;
   width: 70%;
@@ -451,18 +471,19 @@ a {
   transition: all ease-in-out 0.5s;
 }
 
-.looking-for-work {
-  font-size: 2.5rem;
-  padding: 2rem;
-  border-radius: 10px;
-  text-align: center;
-  min-width: 80%;
+.email-container {
+  display: flex;
+  gap: 3rem;
+  font-size: 3rem;
+  font-weight: 500;
+  align-items: center;
 }
 
-.contact-info {
-  font-size: 2.5rem;
-  padding: 2rem;
+.email-icon {
+  background-color: var(--highlight-blue);
   border-radius: 10px;
-  margin: 0;
-  text-align: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
 }
