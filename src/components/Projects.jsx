@@ -3,6 +3,13 @@ import { useState } from "react";
 const Projects = (props) => {
   const projectList = [
     {
+      name: "FRESH Activewear",
+      description:
+        "Fake clothing store application built with React, uses react-router and fetches data from FakeStoreAPI.",
+      image: "/fresh-desktop.jpg",
+      source: "https://fresh-activewear.netlify.app/",
+    },
+    {
       name: "PokeGuess",
       description:
         "Pokemon themed memory card game built with React, uses PokeAPI to asynchronously fetch pokemon data.",
@@ -29,12 +36,6 @@ const Projects = (props) => {
         "Fake eBook library app which uses object oriented programming to generate books.",
       image: "/library-example.png",
       source: "https://rhysez.github.io/library/",
-    },
-    {
-      name: "Battleship",
-      description: "Battleship game playable against a simple AI.",
-      image: "/battleship-example.png",
-      source: "https://rhysez.github.io/battleship/",
     },
     {
       name: "Portfolio",
