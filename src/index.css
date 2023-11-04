@@ -203,7 +203,7 @@ body {
   display: flex;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 4;
   width: 98.5vw;
   justify-content: space-between;
   align-items: center;
@@ -236,33 +236,12 @@ body {
 
 /* About */
 
-@keyframes bounceText {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-0.5vh);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
 #about-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 10%;
-}
-
-.about-front-end {
-  color: var(--background-dark);
-  font-size: 4rem;
-  text-wrap: wrap;
-  text-align: center;
-  font-weight: 300;
-  padding: 2rem;
 }
 
 .about-me {
@@ -276,9 +255,9 @@ body {
 }
 
 @media (max-width: 900px) {
-  .about-me,
-  .about-me-header {
+  .about-me {
     width: 80%;
+    text-align: center;
   }
 }
 
@@ -399,6 +378,14 @@ body {
   .technologies::after {
     width: 150px;
   }
+
+  .skills-header {
+    font-size: 3.5rem;
+  }
+
+  .skills-image {
+    height: 7rem;
+  }
 }
 
 @keyframes scrollImages {
@@ -484,6 +471,10 @@ a {
 }
 
 @media (max-width: 1050px) {
+  .projects-title {
+    font-size: 3.5rem;
+  }
+
   #projects-container {
     grid-template-columns: repeat(1, 1fr);
   }
