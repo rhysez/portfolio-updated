@@ -1,57 +1,32 @@
 import { useState } from "react";
+import Hamburger from "./components/Hamburger";
 import Header from "./components/Header";
-import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
-  const [toggleAbout, setToggleAbout] = useState(false);
-  const [toggleSkills, setToggleSkills] = useState(false);
-  const [toggleProjects, setToggleProjects] = useState(false);
-  const [toggleContact, setToggleContact] = useState(false);
 
-  const handleHamburger = () => {};
+  const [toggleHamburger, setToggleHamburger] = useState(false);
+  const hamburger = document.getElementById('hamburger-menu-container');
 
-  const handleRenderContent = (e) => {
-    if (e.target.textContent === "About") {
-      setToggleAbout(true);
-      setToggleSkills(false);
-      setToggleProjects(false);
-      setToggleContact(false);
+  const handleHamburger = () => {
+    if (toggleHamburger == false) {
+      setToggleHamburger(true)
+    } else if (toggleHamburger == true) {
+      setToggleHamburger(false)
     }
-
-    if (e.target.textContent === "Tech Stack") {
-      setToggleAbout(false);
-      setToggleSkills(true);
-      setToggleProjects(false);
-      setToggleContact(false);
-    }
-
-    if (e.target.textContent === "Projects") {
-      setToggleAbout(false);
-      setToggleSkills(false);
-      setToggleProjects(true);
-      setToggleContact(false);
-    }
-
-    if (e.target.textContent === "Contact") {
-      setToggleAbout(false);
-      setToggleSkills(false);
-      setToggleProjects(false);
-      setToggleContact(true);
-    }
-  };
+  }
 
   return (
     <>
-      <Header openHamburger={handleHamburger} />
-      <NavBar renderContent={handleRenderContent} />
-      {toggleAbout ? <About /> : null}
-      {toggleSkills ? <Skills /> : null}
-      {toggleProjects ? <Projects /> : null}
-      {toggleContact ? <Contact /> : null}
+      {toggleHamburger == true ? <Hamburger /> : null}
+      <Header handleHamburger={handleHamburger} />
+      <About />
+      <Skills /> 
+      <Projects /> 
+      <Contact /> 
     </>
   );
 }

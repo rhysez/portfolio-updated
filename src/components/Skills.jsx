@@ -19,7 +19,7 @@ const Skills = (props) => {
     },
     {
       name: "JavaScript - Programming",
-      color: "yellow",
+      color: "goldenrod",
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     },
@@ -55,7 +55,7 @@ const Skills = (props) => {
     },
     {
       name: "Chrome - Developer tools",
-      color: "yellow",
+      color: "goldenrod",
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg",
     },
@@ -82,7 +82,7 @@ const Skills = (props) => {
 
   return (
     <>
-      <div className="skills-container" style={{ backgroundColor: skillColor }}>
+      <div id="skills-container" style={{ backgroundColor: skillColor }}>
         <h2 className="skills-header">{selectedSkill}</h2>
         <div className="technologies">{technologiesMapped}</div>
       </div>

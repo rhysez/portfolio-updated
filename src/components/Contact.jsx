@@ -11,7 +11,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className='contact-header-container'>
+      <div id='contact-header-container'>
         <h1 className='lets'>Let's</h1>
         <h1 className='connect'>connect.</h1>
       </div>

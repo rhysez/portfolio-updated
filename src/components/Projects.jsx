@@ -89,7 +89,7 @@ const Projects = (props) => {
 
   return (
     <>
-      <div className="projects-container">{projectListMapped}</div>
+      <div id="projects-container">{projectListMapped}</div>
     </>
   );
 };
