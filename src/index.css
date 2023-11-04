@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&family=Marck+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -152,7 +152,9 @@ body {
 }
 
 .header-subtitle {
+  font-family: 'Noto Serif', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 5rem;
+  font-weight: 400;
   color: var(--highlight-blue);
   border-radius: 20px;
   text-align: left;
@@ -310,13 +312,14 @@ body {
 
 #skills-container {
   margin-top: 15%;
+  padding-top: 2rem;
+  background-color: var(--border-dark);
 }
 
 .skills-header {
   text-align: center;
   font-size: 5rem;
   transition: all ease-in-out 0.5s;
-  color: var(--background-light);
 }
 
 .technologies {
@@ -339,12 +342,12 @@ body {
 
 .technologies::before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--background-light));
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--border-dark));
 }
 
 .technologies::after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--background-light));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--border-dark));
 }
 
 .technologies:hover .technologies-slide {
@@ -439,28 +442,6 @@ body {
   color: var(--background-light);
 }
 
-.project-name {
-  text-align: center;
-  color: var(--background-light);
-  background-color: var(--highlight-blue);
-  font-size: 3rem;
-  margin: 0;
-  width: 100%;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  transition: all ease-in-out 0.2s;
-}
-
-.project-description {
-  font-size: 2.5rem;
-  text-align: center;
-  background-color: var(--background-dark);
-  flex-grow: 1;
-  margin: 0;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  transition: all ease-in-out 0.2s;
-}
 
 a {
   text-decoration: none;
@@ -495,12 +476,10 @@ a {
 
 .lets {
   color: var(--background-dark);
-  animation: zoomInLeft 1s;
 }
 
 .connect {
   color: var(--highlight-blue);
-  animation: zoomInRight 1s;
 }
 
 .contact-container {
@@ -509,7 +488,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: growIn 1s;
   transition: all ease-in-out 0.5s;
 }
 

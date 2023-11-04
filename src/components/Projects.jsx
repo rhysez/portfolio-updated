@@ -45,20 +45,6 @@ const Projects = (props) => {
     },
   ];
 
-  let isHovered = false;
-
-  const handleHoverIn = (header, description, project) => {
-    header.textContent = project.name;
-    description.textContent = project.description;
-    isHovered = true;
-  };
-
-  const handleHoverOut = (header, description) => {
-    header.textContent = "";
-    description.textContent = "";
-    isHovered = false;
-  };
-
   const projectListMapped = projectList.map((item, index) => {
     return (
       <a href={item.source} target="_blank">
@@ -66,22 +52,8 @@ const Projects = (props) => {
           className="project"
           key={index}
           style={{ backgroundImage: `url(${item.image})` }}
-          onMouseEnter={() => {
-            handleHoverIn(
-              document.getElementById(item.name),
-              document.getElementById(item.description),
-              item
-            );
-          }}
-          onMouseLeave={() => {
-            handleHoverOut(
-              document.getElementById(item.name),
-              document.getElementById(item.description)
-            );
-          }}
         >
-          <h3 className="project-name" id={item.name}></h3>
-          <p className="project-description" id={item.description}></p>
+
         </div>
       </a>
     );
