@@ -89,6 +89,7 @@ const Projects = (props) => {
 
   return (
     <>
+      <h2 className='projects-title'>Work</h2>
       <div id="projects-container">{projectListMapped}</div>
     </>
   );

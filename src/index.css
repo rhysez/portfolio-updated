@@ -105,6 +105,7 @@ body {
 
 #hamburger-menu-container {
   position: fixed;
+  z-index: 3;
 }
 
 .hamburger-menu {
@@ -181,7 +182,7 @@ body {
   align-items: center;
   padding: 1rem;
   margin-top: 5rem;
-  gap: 23.5rem;
+  gap: 35rem;
 }
 
 @media (max-width: 900px) {
@@ -344,6 +345,31 @@ body {
   padding: 60px 0;
   white-space: nowrap; 
   box-sizing: border-box;
+  position: relative;
+}
+
+.technologies::before,
+.technologies::after {
+  position: absolute;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  content: '';
+  z-index: 2; 
+}
+
+.technologies::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--background-light));
+}
+
+.technologies::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--background-light));
+}
+
+.technologies:hover .technologies-slide {
+  animation-play-state: paused;
 }
 
 .technologies-slide {
@@ -368,6 +394,13 @@ body {
   transform: scale(1.15);
 }
 
+@media (max-width: 1050px) {
+  .technologies::before,
+  .technologies::after {
+    width: 150px;
+  }
+}
+
 @keyframes scrollImages {
   from {
     transform: translateX(0%);
@@ -379,6 +412,12 @@ body {
 
 /* Projects */
 
+.projects-title {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 15%;
+}
+
 #projects-container {
   display: grid;
   justify-content: center;
@@ -387,9 +426,9 @@ body {
   gap: 2rem;
   width: 70%;
   margin: auto;
-  margin-top: 15%;
   animation: growIn 1s;
   transition: all ease-in-out 0.5s;
+  margin-top: 5%;
 }
 
 .project {
