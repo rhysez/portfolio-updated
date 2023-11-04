@@ -9,7 +9,7 @@
   --background-mid: #5e5f5f;
   --background-darkblue: rgb(22, 1, 74);
 
-  --border-dark: rgb(248, 247, 247);
+  --border-dark: rgb(233, 231, 231);
 
   --highlight-blue: rgb(88, 177, 250);
   --highlight-green: rgb(90, 236, 71);
@@ -114,11 +114,10 @@ body {
   position: absolute;
   border-right: solid 1px var(--border-dark);
   background-color: var(--background-light);
-  z-index: 1;
   margin: 0;
   padding: 0;
   height: 100vh;
-  padding-right: 3rem;
+  padding-right: 5rem;
   animation: zoomInLeft 1s;
 }
 
@@ -168,6 +167,7 @@ body {
   margin-top: 4rem;
   background-color: var(--highlight-blue);
   border-radius: 50%;
+  z-index: -1;
 }
 
 .header-main {
@@ -209,7 +209,7 @@ body {
   margin: 0;
   padding: 1.25rem;
   background-color: var(--background-light);
-  border-bottom: solid 2px var(--border-dark);
+  border-bottom: solid 1px var(--border-dark);
 }
 
 .hamburger {
@@ -252,7 +252,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 10%;
 }
 
 .about-front-end {
@@ -318,35 +318,48 @@ body {
 
 /* Skills */
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 #skills-container {
-  text-align: center;
-  margin-top: 5rem;
-  padding-top: 2.5%;
-  padding-bottom: 4.5%;
-  width: 70%;
-  border-radius: 20px;
-  margin: auto;
-  animation: growIn 1s;
-  transition: all ease-in-out 0.5s;
+  margin-top: 15%;
 }
 
 .skills-header {
+  text-align: center;
   font-size: 5rem;
   transition: all ease-in-out 0.5s;
   color: var(--background-light);
 }
 
 .technologies {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 60px 0;
+  white-space: nowrap; 
+  box-sizing: border-box;
+}
+
+.technologies-slide {
+  display: inline-block;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  animation: 15s slide infinite linear;
+  z-index: -1;
+}
+
+.technologies-slide .skills-image {
+  margin: 0 40px;
 }
 
 .skills-image {
-  max-width: 7rem;
+  height: 10rem;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
 }
@@ -374,7 +387,7 @@ body {
   gap: 2rem;
   width: 70%;
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 15%;
   animation: growIn 1s;
   transition: all ease-in-out 0.5s;
 }
@@ -443,6 +456,7 @@ a {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-top: 10%;
 }
 
 .lets, .connect {

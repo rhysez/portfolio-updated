@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Icon from "@mdi/react";
-import { mdiInstagram, mdiGithub, mdiLinkedin, mdiMenu } from "@mdi/js";
+import { mdiInstagram, mdiGithub, mdiLinkedin, mdiHamburger } from "@mdi/js";
 
 const Header = (props) => {
 
@@ -8,7 +8,7 @@ const Header = (props) => {
     <>
       <div className="header-container">
         <div className="nav-bar">
-          <Icon path={mdiMenu} size={2} className='hamburger' onClick={props.handleHamburger} />
+          <Icon path={mdiHamburger} size={2} className='hamburger' onClick={props.handleHamburger} />
           <div className="socials">
             <a href="https://www.linkedin.com/in/rhys-hodgson-8262b3218/" target="_blank">
               <Icon path={mdiLinkedin} size={2} className="nav-social-option" />
