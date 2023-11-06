@@ -15,7 +15,7 @@
   --highlight-green: rgb(90, 236, 71);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .header {
     flex-direction: column;
   }
@@ -184,7 +184,7 @@ body {
   align-items: center;
   padding: 1rem;
   margin-top: 5rem;
-  gap: 35rem;
+  gap: 20rem;
 }
 
 @media (max-width: 900px) {
@@ -243,7 +243,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 10%;
+  padding-top: 10%;
 }
 
 .about-me {
@@ -405,7 +405,7 @@ body {
 .projects-title {
   text-align: center;
   font-size: 5rem;
-  margin-top: 15%;
+  padding-top: 15%;
 }
 
 #projects-container {
