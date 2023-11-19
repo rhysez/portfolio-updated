@@ -6,8 +6,8 @@ const Header = (props) => {
 
   return (
     <>
-      <div className="header-container">
-        <div className="nav-bar">
+      <section className="header-container">
+        <nav className="nav-bar">
           <Icon path={mdiHamburger} size={2} className='hamburger' onClick={props.handleHamburger} />
           <div className="socials">
             <a href="https://www.linkedin.com/in/rhys-hodgson-8262b3218/" target="_blank">
@@ -20,7 +20,7 @@ const Header = (props) => {
               <Icon path={mdiGithub} size={2} className="nav-social-option" />
             </a>
           </div>
-        </div>
+        </nav>
         <div className="header">
           <div className="header-main">
             <h2 className="header-title">Hi, I'm Rhys</h2>
@@ -28,7 +28,7 @@ const Header = (props) => {
           </div>
           <img src="/memoji.png" alt="man at desk" className="header-image" />
         </div>
-      </div>
+      </section>
     </>
   );
 };

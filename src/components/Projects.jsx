@@ -8,6 +8,9 @@ const Projects = (props) => {
         "Fake clothing store application built with React, uses react-router and fetches data from FakeStoreAPI.",
       image: "/fresh-desktop.jpg",
       source: "https://fresh-activewear.netlify.app/",
+      code: 'https://github.com/rhysez/fake-clothing-store',
+      type: 'React',
+      fullStack: false
     },
     {
       name: "PokeGuess",
@@ -15,6 +18,9 @@ const Projects = (props) => {
         "Pokemon themed memory card game built with React, uses PokeAPI to asynchronously fetch pokemon data.",
       image: "/poke-guess.png",
       source: "https://pokemonguessr.netlify.app/",
+      code: 'https://github.com/rhysez/memory-card-game',
+      type: 'React',
+      fullStack: false
     },
     {
       name: "YourDoing",
@@ -22,6 +28,9 @@ const Projects = (props) => {
         "To do list app built using vanilla JavaScript, uses object oriented programming and localStorage API.",
       image: "/todolistdesktopdark.png",
       source: "https://rhysez.github.io/todolist/",
+      code: 'https://github.com/rhysez/todolist',
+      type: 'Vanilla JS',
+      fullStack: false
     },
     {
       name: "Weather.js",
@@ -29,6 +38,9 @@ const Projects = (props) => {
         "Weather app built that uses asynchronous code to fetch real-time weather information using WeatherAPI.",
       image: "/weather-desktop-example.png",
       source: "https://rhysez.github.io/weather-app/",
+      code: 'https://github.com/rhysez/weather-app',
+      type: 'Vanilla JS',
+      fullStack: false
     },
     {
       name: "eBook Library",
@@ -36,33 +48,50 @@ const Projects = (props) => {
         "Fake eBook library app which uses object oriented programming to generate books.",
       image: "/library-example.png",
       source: "https://rhysez.github.io/library/",
+      code: 'https://github.com/rhysez/library',
+      type: 'Vanilla JS',
+      fullStack: false
     },
     {
       name: "Portfolio",
       description:
         "This website! It was built using React, and uses Vite as a bundler.",
       image: "/portfolio-home.png",
+      source: 'https://rhyshodgsondev.netlify.app/',
+      code: 'https://github.com/rhysez/portfolio-updated',
+      type: 'React',
+      fullStack: false
     },
   ];
 
-  const projectListMapped = projectList.map((item, index) => {
+  const projectListAll = projectList.map((item, index) => {
     return (
-      <a href={item.source} target="_blank">
-        <div
-          className="project"
-          key={index}
-          style={{ backgroundImage: `url(${item.image})` }}
-        >
+        <section className='project-card'>
+            <div
+            className="project"
+            key={index}
+            style={{ backgroundImage: `url(${item.image})` }}
+            >
+            </div>
 
-        </div>
-      </a>
+            <div className='project-info-container'>
+              <h4 className='project-info-title'>{item.name}</h4>
+              <p className='project-info-description'>{item.description}</p>
+            </div>
+
+            <div className='project-buttons'>
+              <a href={item.code} target='_blank'><button className='project-button'>Code</button></a>
+              <a href={item.source} target='_blank'><button className='project-button'>Live</button></a>
+            </div>
+        </section>
+     
     );
   });
 
   return (
     <>
       <h2 className='projects-title'>Work</h2>
-      <div id="projects-container">{projectListMapped}</div>
+      <section id="projects-container">{projectListAll}</section>
     </>
   );
 };

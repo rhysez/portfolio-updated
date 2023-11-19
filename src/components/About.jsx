@@ -1,7 +1,7 @@
 const About = (props) => {
   return (
     <>
-      <div id="about-container">
+      <section id="about-container">
         <div className="about-me-body">
           <p className="about-me">
             Welcome to my professional online portfolio. I'm a proficient{" "}
@@ -14,7 +14,7 @@ const About = (props) => {
             near my home town.
           </p>
         </div>
-      </div>
+      </section>
     </>
   );
 };

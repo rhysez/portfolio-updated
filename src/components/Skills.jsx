@@ -82,13 +82,13 @@ const Skills = (props) => {
 
   return (
     <>
-      <div id="skills-container">
+      <section id="skills-container">
         <h2 className="skills-header" style={{ color: skillColor }}>{selectedSkill}</h2>
         <div className='technologies'>
           <div className="technologies-slide">{technologiesMapped}</div>
           <div className="technologies-slide">{technologiesMapped}</div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
