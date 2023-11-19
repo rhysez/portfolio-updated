@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Skills = (props) => {
-  const [selectedSkill, setSelectedSkill] = useState("Front end tech stack");
+  const [selectedSkill, setSelectedSkill] = useState("Tech stack");
   const [skillColor, setSkillColor] = useState("var(--background-dark)");
 
   const technologies = [

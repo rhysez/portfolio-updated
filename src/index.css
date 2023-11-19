@@ -142,7 +142,7 @@ body {
 }
 
 .header-title {
-  font-size: 10rem;
+  font-size: 15rem;
   transition: all ease-in-out 0.2s;
   animation: fadeIn 2s;
   color: var(--background-dark);
@@ -153,7 +153,7 @@ body {
 
 .header-subtitle {
   font-family: 'Noto Serif', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 5rem;
+  font-size: 7.5rem;
   font-weight: 400;
   color: var(--highlight-blue);
   border-radius: 20px;
@@ -164,7 +164,7 @@ body {
 }
 
 .header-image {
-  max-width: 15vw;
+  max-width: 17.5vw;
   transition: all ease-in-out 0.25s;
   animation: pulse 2s infinite;
   margin-top: 4rem;
@@ -191,6 +191,12 @@ body {
   .header-title,
   .header-subtitle {
     text-align: center;
+  }
+  .header-title {
+    font-size: 10rem;
+  }
+  .header-subtitle {
+    font-size: 5rem;
   }
   .header-image {
     max-width: 50vw;
