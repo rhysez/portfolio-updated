@@ -13,6 +13,16 @@ const Projects = (props) => {
       fullStack: false
     },
     {
+      name: "StockManager (Node.js)",
+      description:
+        "A server-side CRUD application for creating, viewing, updating and deleting items for your imaginary office space. Password required for adding new items/categories for sake of security.",
+      image: "/stockmanager.jpg",
+      source: "https://inventory-manager-production-0b49.up.railway.app/inventory",
+      code: 'https://github.com/rhysez/inventory-manager',
+      type: 'Node.js',
+      fullStack: true
+    },
+    {
       name: "PokeGuess",
       description:
         "Pokemon themed memory card game built with React, uses PokeAPI to asynchronously fetch pokemon data.",
@@ -39,16 +49,6 @@ const Projects = (props) => {
       image: "/weather-desktop-example.png",
       source: "https://rhysez.github.io/weather-app/",
       code: 'https://github.com/rhysez/weather-app',
-      type: 'Vanilla JS',
-      fullStack: false
-    },
-    {
-      name: "eBook Library",
-      description:
-        "Fake eBook library app which uses object oriented programming to generate books.",
-      image: "/library-example.png",
-      source: "https://rhysez.github.io/library/",
-      code: 'https://github.com/rhysez/library',
       type: 'Vanilla JS',
       fullStack: false
     },
