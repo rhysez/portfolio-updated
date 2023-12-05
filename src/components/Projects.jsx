@@ -17,7 +17,7 @@ const Projects = (props) => {
       description:
         "A server-side CRUD application for creating, viewing, updating and deleting items for your imaginary office space. Password required for adding new items/categories for sake of security.",
       image: "/stockmanager.jpg",
-      source: "https://inventory-manager-production-0b49.up.railway.app/inventory",
+      source: "https://inventory-manager-production-4dc0.up.railway.app/inventory",
       code: 'https://github.com/rhysez/inventory-manager',
       type: 'Node.js',
       fullStack: true
