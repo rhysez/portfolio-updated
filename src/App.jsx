@@ -9,14 +9,9 @@ import Contact from "./components/Contact";
 function App() {
 
   const [toggleHamburger, setToggleHamburger] = useState(false);
-  const hamburger = document.getElementById('hamburger-menu-container');
 
   const handleHamburger = () => {
-    if (toggleHamburger == false) {
-      setToggleHamburger(true)
-    } else if (toggleHamburger == true) {
-      setToggleHamburger(false)
-    }
+    setToggleHamburger(!toggleHamburger);
   }
 
   return (

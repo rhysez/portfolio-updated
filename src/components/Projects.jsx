@@ -3,6 +3,16 @@ import { useState } from "react";
 const Projects = (props) => {
   const projectList = [
     {
+    name: "MembersOnly",
+      description:
+        "Mini social posting platform where users can create an account and upgrade their membership to make posts, and show them to others.",
+      image: "/membersonly.jpg",
+      source: "https://members-only-production-73c0.up.railway.app",
+      code: 'https://github.com/rhysez/members-only',
+      type: 'NodeJS',
+      fullStack: true
+    },
+    {
       name: "FRESH Activewear",
       description:
         "Fake clothing store application built with React, uses react-router and fetches data from FakeStoreAPI.",
@@ -13,13 +23,13 @@ const Projects = (props) => {
       fullStack: false
     },
     {
-      name: "StockManager (Node.js)",
+      name: "StockManager",
       description:
         "A server-side CRUD application for creating, viewing, updating and deleting items for your imaginary office space. Password required for adding new items/categories for sake of security.",
       image: "/stockmanager.jpg",
       source: "https://inventory-manager-production-4dc0.up.railway.app/inventory",
       code: 'https://github.com/rhysez/inventory-manager',
-      type: 'Node.js',
+      type: 'NodeJS',
       fullStack: true
     },
     {
@@ -30,16 +40,6 @@ const Projects = (props) => {
       source: "https://pokemonguessr.netlify.app/",
       code: 'https://github.com/rhysez/memory-card-game',
       type: 'React',
-      fullStack: false
-    },
-    {
-      name: "YourDoing",
-      description:
-        "To do list app built using vanilla JavaScript, uses object oriented programming and localStorage API.",
-      image: "/todolistdesktopdark.png",
-      source: "https://rhysez.github.io/todolist/",
-      code: 'https://github.com/rhysez/todolist',
-      type: 'Vanilla JS',
       fullStack: false
     },
     {

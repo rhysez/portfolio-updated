@@ -24,7 +24,7 @@ const Header = (props) => {
         <div className="header">
           <div className="header-main">
             <h2 className="header-title">Hi, I'm Rhys</h2>
-            <h2 className="header-subtitle">A Front End Developer</h2>
+            <h2 className="header-subtitle">A Full Stack Developer</h2>
           </div>
           <img src="/memoji.png" alt="man at desk" className="header-image" />
         </div>
