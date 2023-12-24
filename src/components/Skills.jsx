@@ -59,7 +59,46 @@ const Skills = (props) => {
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg",
     },
+    {
+      name: "NodeJS",
+      color: "mediumseagreen",
+      source:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
+    },
+    {
+      name: "ExpressJS",
+      color: "dodgerblue",
+      source:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
+    },
+    {
+      name: "MongoDB",
+      color: "lightgreen",
+      source:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
+    },
   ];
+
+  const backendTechnologies = [
+    {
+      name: "NodeJS",
+      color: "mediumseagreen",
+      source:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
+    },
+    {
+      name: "ExpressJS",
+      color: "dodgerblue",
+      source:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
+    },
+    {
+      name: "MongoDB",
+      color: "lightgreen",
+      source:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
+    },
+  ]
 
   const handleChangeSkill = (skill) => {
     setSelectedSkill(skill.name);
