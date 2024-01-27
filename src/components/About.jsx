@@ -4,9 +4,10 @@ const About = (props) => {
       <section id='about-container'>
         <div className='about-me-body'>
           <p className='about-me'>
-            Welcome to my professional online portfolio. I'm a proficient JavaScript developer with a passion for
-            building beautiful, responsive web applications. I'm creative in my approach, and determined to deliver
-            software that is secure and scalable. However, my prime goal is being as good as I can at writing rock solid JavaScript. 
+            Software engineer who loves collaborating with others to build real full stack
+            applications that solve real world problems. Currently working at a small tech start-up
+            specialising in the aviation industry. I've built some cool stuff of my own too, so feel free
+            to check that out below. 
           </p>
         </div>
       </section>

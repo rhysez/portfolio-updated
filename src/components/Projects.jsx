@@ -3,6 +3,16 @@ import { useState } from "react";
 const Projects = (props) => {
   const projectList = [
     {
+      name: "Blogr",
+        description:
+          "Blogging platform for reading, liking and commenting on blog posts.",
+        image: "/blogr.jpg",
+        source: "https://blogr-client.netlify.app/",
+        code: 'https://github.com/rhysez/blogr-client',
+        type: 'MERN',
+        fullStack: true
+    },
+    {
     name: "MembersOnly",
       description:
         "Mini social posting platform where users can create an account and upgrade their membership to make posts, and show them to others.",
@@ -21,16 +31,6 @@ const Projects = (props) => {
       code: 'https://github.com/rhysez/fake-clothing-store',
       type: 'React',
       fullStack: false
-    },
-    {
-      name: "StockManager",
-      description:
-        "A server-side CRUD application for creating, viewing, updating and deleting items for your imaginary office space. Password required for adding new items/categories for sake of security.",
-      image: "/stockmanager.jpg",
-      source: "https://inventory-manager-production-4dc0.up.railway.app/inventory",
-      code: 'https://github.com/rhysez/inventory-manager',
-      type: 'NodeJS',
-      fullStack: true
     },
     {
       name: "PokeGuess",
