@@ -5,7 +5,7 @@ const Projects = (props) => {
     {
       name: "Blogr",
         description:
-          "Blogging platform for reading, liking and commenting on blog posts.",
+          "Blogging platform for reading, liking and commenting on blog posts. Built with MongoDB, Express, React and Node.",
         image: "/blogr.jpg",
         source: "https://blogr-client.netlify.app/",
         code: 'https://github.com/rhysez/blogr-client',

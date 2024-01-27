@@ -18,14 +18,14 @@ const Skills = (props) => {
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     },
     {
-      name: "JavaScript - Programming",
-      color: "goldenrod",
+      name: "TypeScript - Programming",
+      color: "dodgerblue",
       source:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
     },
     {
       name: "React - Library",
-      color: "dodgerblue",
+      color: "cyan",
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
@@ -54,51 +54,24 @@ const Skills = (props) => {
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
     },
     {
-      name: "Chrome - Developer tools",
-      color: "goldenrod",
-      source:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg",
-    },
-    {
-      name: "NodeJS",
+      name: "NodeJS - Runetime Environment",
       color: "mediumseagreen",
       source:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
     },
     {
-      name: "ExpressJS",
+      name: "ExpressJS - Backend Framework",
       color: "dodgerblue",
       source:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
     },
     {
-      name: "MongoDB",
+      name: "MongoDB - NoSQL Database",
       color: "lightgreen",
       source:
       "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
     },
   ];
-
-  const backendTechnologies = [
-    {
-      name: "NodeJS",
-      color: "mediumseagreen",
-      source:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
-    },
-    {
-      name: "ExpressJS",
-      color: "dodgerblue",
-      source:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
-    },
-    {
-      name: "MongoDB",
-      color: "lightgreen",
-      source:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
-    },
-  ]
 
   const handleChangeSkill = (skill) => {
     setSelectedSkill(skill.name);
