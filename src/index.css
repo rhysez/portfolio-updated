@@ -120,7 +120,6 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
-  gap: 20rem;
 }
 
 @media (max-width: 900px) {
@@ -177,7 +176,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 10%;
+  padding-top: 8rem;
 }
 
 .about-me {
@@ -192,118 +191,6 @@ body {
   .about-me {
     width: 80%;
     font-size: 2.25rem;
-  }
-}
-
-.js {
-  display: inline-block;
-  color: var(--highlight-blue);
-  font-weight: 400;
-}
-
-.react {
-  display: inline-block;
-  color: var(--highlight-blue);
-  font-weight: 400;
-}
-
-.hello {
-  font-weight: 500;
-}
-
-.contents-number {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.about-icon {
-  filter: invert(100%) sepia(14%) saturate(4059%) hue-rotate(49deg)
-    brightness(89%) contrast(103%);
-  margin: 0;
-  padding: 0;
-  max-width: 20%;
-}
-
-/* Skills */
-
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-#skills-container {
-  margin-top: 15%;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: var(--card-grey);
-}
-
-.skills-header {
-  text-align: center;
-  font-size: 5rem;
-  transition: all ease-in-out 0.5s;
-}
-
-.technologies {
-  overflow: hidden;
-  padding: 60px 0;
-  white-space: nowrap; 
-  box-sizing: border-box;
-  position: relative;
-}
-
-.technologies:hover .technologies-slide {
-  animation-play-state: paused;
-}
-
-.technologies-slide {
-  display: inline-block;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  animation: 15s slide infinite linear;
-  z-index: -1;
-}
-
-.technologies-slide .skills-image {
-  margin: 0 40px;
-}
-
-.skills-image {
-  height: 10rem;
-  cursor: pointer;
-  transition: all ease-in-out 0.2s;
-}
-
-.skills-image:hover {
-  transform: scale(1.15);
-}
-
-@media (max-width: 1050px) {
-  .technologies::before,
-  .technologies::after {
-    width: 150px;
-  }
-
-  .skills-header {
-    font-size: 3.5rem;
-  }
-
-  .skills-image {
-    height: 7rem;
-  }
-}
-
-@keyframes scrollImages {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-50%);
   }
 }
 
