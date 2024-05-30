@@ -1,6 +1,5 @@
-import { useState } from "react";
 
-const Projects = (props) => {
+const Projects = () => {
   const projectList = [
     {
       name: "Blogr",
@@ -66,7 +65,7 @@ const Projects = (props) => {
 
   const projectListAll = projectList.map((item, index) => {
     return (
-        <section className='project-card'>
+        <section className='project-card' key={index}>
             <div
             className="project"
             key={index}

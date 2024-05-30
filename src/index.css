@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   /*color scheme*/
   --background-light: white;
@@ -12,7 +13,7 @@
   --border-dark: rgb(233, 231, 231);
 
   --highlight-blue: rgb(88, 177, 250);
-  --highlight-green: rgb(90, 236, 71);
+  --highlight-green: #4ab577;
 }
 
 @media (max-width: 1100px) {
@@ -59,24 +60,6 @@
   }
 }
 
-@keyframes zoomInLeft {
-  0% {
-    transform: translateX(-100px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes zoomInRight {
-  0% {
-    transform: translateX(50px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 @keyframes pulse {
   0% {
     transform: scale(0.97);
@@ -101,39 +84,6 @@ body {
   padding: 0;
 }
 
-/* Hamburger */
-
-#hamburger-menu-container {
-  position: fixed;
-  z-index: 3;
-}
-
-.hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: absolute;
-  border-right: solid 1px var(--border-dark);
-  background-color: var(--background-light);
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  padding-right: 5rem;
-  animation: zoomInLeft 1s;
-}
-
-.hamburger-list {
-  margin-top: 10rem;
-}
-
-.menu-option {
-  list-style: none;
-  color: var(--background-dark);
-  font-size: 2rem;
-  margin-top: 2rem;
-  font-weight: 500;
-}
-
 /* Header */
 
 .header-container {
@@ -143,11 +93,10 @@ body {
 
 .header-title {
   font-size: 15rem;
-  transition: all ease-in-out 0.2s;
-  animation: fadeIn 2s;
+  font-weight: 600;
   color: var(--background-dark);
   border-radius: 20px;
-  text-align: left;
+  text-align: center;
   margin-bottom: 0;
 }
 
@@ -155,27 +104,14 @@ body {
   font-family: 'Noto Serif', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-size: 7.5rem;
   font-weight: 400;
-  color: var(--highlight-blue);
+  color: var(--highlight-green);
   border-radius: 20px;
-  text-align: left;
+  text-align: center;
   margin: 0;
-  transition: all ease-in-out 0.25s;
-  animation: zoomInLeft 2s;
-}
-
-.header-image {
-  max-width: 17.5vw;
-  transition: all ease-in-out 0.25s;
-  animation: pulse 2s infinite;
-  margin-top: 4rem;
-  background-color: var(--highlight-blue);
-  border-radius: 50%;
-  z-index: -1;
 }
 
 .header-main {
   margin: 1rem;
-  transition: all ease-in-out 0.2s;
 }
 
 .header {
@@ -188,19 +124,11 @@ body {
 }
 
 @media (max-width: 900px) {
-  .header-title,
-  .header-subtitle {
-    text-align: center;
-  }
   .header-title {
-    font-size: 10rem;
+    font-size: 8rem;
   }
   .header-subtitle {
     font-size: 5rem;
-  }
-  .header-image {
-    max-width: 50vw;
-    margin-top: 0;
   }
   .header {
     gap: 7.5rem;
@@ -213,7 +141,7 @@ body {
   top: 0;
   z-index: 4;
   width: 98.5vw;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin: 0;
   padding: 1.25rem;
@@ -496,7 +424,7 @@ a {
 }
 
 .project-button:hover {
-  background-color: var(--highlight-blue);
+  background-color: var(--highlight-green);
   color: var(--background-light);
 }
 
@@ -514,7 +442,7 @@ a {
 
 #contact-container {
   display: flex;
-  background-color: var(--highlight-blue);
+  background-color: var(--highlight-green);
   align-items: center;
   justify-content: center;
   margin-top: 15%;
