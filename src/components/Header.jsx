@@ -4,8 +4,8 @@ const Header = () => {
 
   return (
     <>
+      <TopNav />
       <section className="header-container">
-        <TopNav />
         <header className="header">
           <section className="header-main">
             <h2 className="header-title">Rhys Hodgson</h2>

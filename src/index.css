@@ -11,6 +11,7 @@
   --background-darkblue: rgb(22, 1, 74);
 
   --border-dark: rgb(233, 231, 231);
+  --card-grey: #f0f0f0;
 
   --highlight-blue: rgb(88, 177, 250);
   --highlight-green: #4ab577;
@@ -118,7 +119,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
   margin-top: 5rem;
   gap: 20rem;
 }
@@ -161,7 +161,7 @@ body {
 }
 
 .nav-social-option:hover {
-  color: var(--highlight-blue);
+  color: var(--highlight-green);
 }
 
 .socials {
@@ -182,25 +182,17 @@ body {
 
 .about-me {
   font-size: 3rem;
-  font-weight: 200;
+  font-weight: lighter;
   padding: 2rem;
-  text-align: left;
-  width: 60%;
   margin-top: 0;
-  animation: growIn 1s;
+  width: 50%;
 }
 
 @media (max-width: 900px) {
   .about-me {
     width: 80%;
-    text-align: center;
+    font-size: 2.25rem;
   }
-}
-
-.about-me-body {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .js {
@@ -246,8 +238,9 @@ body {
 
 #skills-container {
   margin-top: 15%;
-  padding-top: 2rem;
-  background-color: var(--border-dark);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: var(--card-grey);
 }
 
 .skills-header {
@@ -262,26 +255,6 @@ body {
   white-space: nowrap; 
   box-sizing: border-box;
   position: relative;
-}
-
-.technologies::before,
-.technologies::after {
-  position: absolute;
-  top: 0;
-  width: 350px;
-  height: 100%;
-  content: '';
-  z-index: 2; 
-}
-
-.technologies::before {
-  left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--border-dark));
-}
-
-.technologies::after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--border-dark));
 }
 
 .technologies:hover .technologies-slide {
@@ -339,7 +312,8 @@ body {
 .projects-title {
   text-align: center;
   font-size: 5rem;
-  padding-top: 15%;
+  padding-top: 12%;
+  padding-bottom: 5%;
 }
 
 .project-type-container {
@@ -360,11 +334,9 @@ body {
   grid-template-columns: repeat(2, 50rem);
   grid-template-rows: auto;
   gap: 2rem;
-  width: 70%;
+  width: 92%;
   margin: auto;
-  animation: growIn 1s;
-  transition: all ease-in-out 0.5s;
-  margin-top: 5%;
+  margin-bottom: 2rem;
 }
 
 .project {

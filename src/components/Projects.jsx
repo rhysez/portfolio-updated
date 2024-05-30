@@ -1,3 +1,4 @@
+import ProjectItem from "./ProjectItem.jsx";
 
 const Projects = () => {
   const projectList = [
@@ -9,7 +10,6 @@ const Projects = () => {
         source: "https://blogr-client.netlify.app/",
         code: 'https://github.com/rhysez/blogr-client',
         type: 'MERN',
-        fullStack: true
     },
     {
     name: "MembersOnly",
@@ -19,7 +19,6 @@ const Projects = () => {
       source: "https://members-only-production-73c0.up.railway.app",
       code: 'https://github.com/rhysez/members-only',
       type: 'NodeJS',
-      fullStack: true
     },
     {
       name: "FRESH Activewear",
@@ -29,7 +28,6 @@ const Projects = () => {
       source: "https://fresh-activewear.netlify.app/",
       code: 'https://github.com/rhysez/fake-clothing-store',
       type: 'React',
-      fullStack: false
     },
     {
       name: "PokeGuess",
@@ -39,7 +37,6 @@ const Projects = () => {
       source: "https://pokemonguessr.netlify.app/",
       code: 'https://github.com/rhysez/memory-card-game',
       type: 'React',
-      fullStack: false
     },
     {
       name: "Weather.js",
@@ -49,7 +46,6 @@ const Projects = () => {
       source: "https://rhysez.github.io/weather-app/",
       code: 'https://github.com/rhysez/weather-app',
       type: 'Vanilla JS',
-      fullStack: false
     },
     {
       name: "Portfolio",
@@ -59,31 +55,12 @@ const Projects = () => {
       source: 'https://rhyshodgsondev.netlify.app/',
       code: 'https://github.com/rhysez/portfolio-updated',
       type: 'React',
-      fullStack: false
     },
   ];
 
   const projectListAll = projectList.map((item, index) => {
     return (
-        <section className='project-card' key={index}>
-            <div
-            className="project"
-            key={index}
-            style={{ backgroundImage: `url(${item.image})` }}
-            >
-            </div>
-
-            <div className='project-info-container'>
-              <h4 className='project-info-title'>{item.name}</h4>
-              <p className='project-info-description'>{item.description}</p>
-            </div>
-
-            <div className='project-buttons'>
-              <a href={item.code} target='_blank'><button className='project-button'>Code</button></a>
-              <a href={item.source} target='_blank'><button className='project-button'>Live</button></a>
-            </div>
-        </section>
-     
+     <ProjectItem key={index} image={item.image} name={item.name} description={item.description} source={item.source} code={item.code} />
     );
   });
 
