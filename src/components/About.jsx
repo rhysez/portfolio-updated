@@ -8,7 +8,9 @@ const About = () => {
             specialising in the aviation industry. I&apos;ve built some cool stuff of my own too, so feel free
             to check that out below.
           </p>
-
+          <a className={'call-to-action'} href="#projects">
+              View portfolio
+          </a>
       </section>
     </>
   );

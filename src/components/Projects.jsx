@@ -47,10 +47,10 @@ const Projects = () => {
   });
 
   return (
-    <>
+    <section id={'projects'}>
       <h2 className='section-title'>Projects</h2>
       <section id="projects-container">{projectListAll}</section>
-    </>
+    </section>
   );
 };
 

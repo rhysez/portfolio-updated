@@ -191,6 +191,17 @@ body {
     width: 50%;
 }
 
+.call-to-action {
+    background-color: var(--highlight-green);
+    color: var(--background-light);
+    border: 0;
+    border-radius: 9999px;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: 'Noto Serif', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
 @media (max-width: 900px) {
     .about-me {
         width: 80%;
