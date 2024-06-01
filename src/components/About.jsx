@@ -21,7 +21,7 @@ const About = () => {
                 </p>
                 <p className={'about-me'}>
                     You can also read my blog, where I teach you the foundations of modern web development. I called
-                    this blog <span style={{fontStyle: 'italic', color: '#5ca184'}}>Learn Web Development On Your Coffee Break</span>.
+                    this blog <span style={{fontStyle: 'italic'}}>Learn Web Development On Your Coffee Break</span>.
                 </p>
             </section>
         </>
