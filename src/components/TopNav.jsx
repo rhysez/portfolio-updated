@@ -1,5 +1,5 @@
 import Icon from "@mdi/react";
-import {mdiInstagram, mdiGithub, mdiLinkedin} from "@mdi/js";
+import {mdiInstagram, mdiGithub, mdiLinkedin, mdiThoughtBubble} from "@mdi/js";
 
 const TopNav = () => {
     return (
@@ -20,6 +20,9 @@ const TopNav = () => {
                 </a>
                 <a href="https://github.com/rhysez" target="_blank">
                     <Icon path={mdiGithub} size={2} className="nav-social-option"/>
+                </a>
+                <a href="https://medium.com/@rhyshodgson97/learn-web-development-on-your-coffee-break-preface-read-this-first-a0519581c805" target="_blank">
+                    <Icon path={mdiThoughtBubble} size={2} className="nav-social-option"/>
                 </a>
             </div>
         </nav>

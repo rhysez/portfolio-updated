@@ -202,6 +202,14 @@ body {
     color: var(--background-dark);
 }
 
+.call-to-action-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
 .call-to-action {
     background-color: var(--highlight-green);
     color: var(--background-light);
@@ -217,6 +225,9 @@ body {
     .about-me {
         width: 80%;
         font-size: 2.25rem;
+    }
+    .call-to-action-container {
+        flex-direction: column;
     }
 }
 
