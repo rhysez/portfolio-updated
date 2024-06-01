@@ -259,16 +259,28 @@ body {
     display: flex;
     gap: 1rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .job-tag {
     flex-grow: 0;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 9999px;
     background-color: #5ca184;
     color: var(--background-light);
     font-family: 'Noto Serif', system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-size: 1.25rem
+}
+
+@media (max-width: 1050px) {
+    .job-title-date-website {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+    .job-card {
+        width: 85%;
+    }
 }
 
 /* Projects */

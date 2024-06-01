@@ -25,7 +25,7 @@ const JobCard = ({companyTitle, jobTitle, jobDescription, tags, dates, companyWe
                     tags.map((item, index) => {
                         return (
                             <div className={'job-tag'} key={index}>
-                                <p>{item}</p>
+                                <p style={{padding: 0, margin: 0}}>{item}</p>
                             </div>
                         )
                     })
