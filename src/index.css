@@ -5,7 +5,7 @@
 
     /*color scheme*/
     --background-light: white;
-    --background-dark: #282a2c;
+    --background-dark: #2c2d2f;
     --background-mid: #5e5f5f;
     --background-darkblue: rgb(22, 1, 74);
 
@@ -16,6 +16,8 @@
 
     --highlight-blue: rgb(88, 177, 250);
     --highlight-green: #4ab577;
+
+    --accent-green: #5ca184;
 }
 
 @media (max-width: 1100px) {
@@ -113,7 +115,7 @@ body {
 }
 
 .header-main {
-    margin: 1rem;
+    margin: 0;
 }
 
 .header {
@@ -189,6 +191,7 @@ body {
     padding: 2rem;
     margin-top: 0;
     width: 50%;
+    color: var(--background-dark);
 }
 
 .call-to-action {
@@ -197,7 +200,7 @@ body {
     border: 0;
     border-radius: 9999px;
     font-size: 2rem;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.25rem;
     cursor: pointer;
     font-family: 'Noto Serif', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
@@ -215,7 +218,7 @@ body {
     display: flex;
     flex-direction: column;
     border: solid 1px var(--border-dark);
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 2rem;
     width: 50%;
     margin: auto;
@@ -277,7 +280,7 @@ body {
     flex-grow: 0;
     padding: 0.5rem 1rem;
     border-radius: 9999px;
-    background-color: #5ca184;
+    background-color: var(--accent-green);
     color: var(--background-light);
     font-family: 'Noto Serif', system-ui, Avenir, Helvetica, Arial, sans-serif;
     font-size: 1.25rem
@@ -301,6 +304,7 @@ body {
     font-size: 5rem;
     padding-bottom: 1.5rem;
     padding-top: 10rem;
+    color: var(--background-dark);
 }
 
 .project-type-container {
@@ -347,7 +351,7 @@ a {
     flex-direction: column;
     margin: 0;
     border: solid 1px var(--border-dark);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .project-info-container {
@@ -356,6 +360,7 @@ a {
 
 .project-info-title {
     font-size: 2.5rem;
+    color: var(--background-dark);
 }
 
 .project-info-description {
@@ -377,13 +382,13 @@ a {
     border: solid 1px var(--border-dark);
     font-size: 1.5rem;
     padding: 1rem 2rem 1rem 2rem;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: all ease-in-out 0.2s;
     cursor: pointer;
 }
 
 .project-button:hover {
-    background-color: var(--highlight-green);
+    background-color: var(--accent-green);
     color: var(--background-light);
 }
 
@@ -397,25 +402,16 @@ a {
     }
 }
 
-/* Contact */
+/* Footer */
 
-#contact-container {
-    display: flex;
-    background-color: var(--highlight-green);
-    align-items: center;
-    justify-content: center;
-    margin-top: 15%;
-    padding: 3rem 3rem;
-    gap: 1rem;
+.footer {
+    background-color: var(--border-dark);
+    padding: 2rem;
+    margin-top: 10rem;
 }
 
-.contact-text {
-    color: var(--background-light);
-    font-size: 2rem;
-}
-
-.email-icon {
-    color: var(--background-light);
-    cursor: pointer;
-    text-decoration: none;
+.footer-text {
+    color: var(--background-dark);
+    font-size: 1.25rem;
+    text-align: center;
 }

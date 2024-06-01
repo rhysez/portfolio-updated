@@ -9,7 +9,7 @@ const Experience = () => {
                 companyTitle={'HeliCrewManager'}
                 jobTitle={'Full Stack Engineer'}
                 jobDescription={'Integral role in building and re-writing the company SaaS application using TypeScript, NextJS and Laravel. ' +
-                    'I have also spearheaded the ongoing development of the FCM Hub native mobile application, which has been built with React Native.'}
+                    'I have also spearheaded the ongoing development of the FCM Hub mobile app, which has been built with React Native.'}
                 tags={['TypeScript', 'React', 'React Native', 'NextJS', 'Laravel', 'Tailwind CSS', 'MySQL']}
                 dates={['January 2024', 'Present']}
                 companyWebsite={'https://helicrewmanager.com/'}
