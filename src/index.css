@@ -12,6 +12,8 @@
     --border-dark: rgb(233, 231, 231);
     --card-grey: #f0f0f0;
 
+    --job-title: #666666;
+
     --highlight-blue: rgb(88, 177, 250);
     --highlight-green: #4ab577;
 }
@@ -196,13 +198,86 @@ body {
     }
 }
 
+/* Commercial */
+
+.job-card {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px var(--border-dark);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.job-company-title {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    color: var(--highlight-green);
+}
+
+.job-personal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--job-title);
+    margin: 0;
+    padding: 0;
+}
+
+.job-title-date-website {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.job-dates {
+    font-family: 'Noto Serif', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: var(--card-grey);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1.25rem;
+}
+
+.job-company-website {
+    font-family: 'Noto Serif', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: var(--highlight-blue);
+    color: var(--background-light);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1.25rem;
+}
+
+.job-description {
+    font-family: 'Noto Serif', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1.35rem;
+}
+
+.job-tags-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.job-tag {
+    flex-grow: 0;
+    padding: 0 1rem;
+    border-radius: 9999px;
+    background-color: #5ca184;
+    color: var(--background-light);
+    font-family: 'Noto Serif', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1.25rem
+}
+
 /* Projects */
 
-.projects-title {
+.section-title {
     text-align: center;
     font-size: 5rem;
-    padding-top: 12%;
-    padding-bottom: 5%;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
 }
 
 .project-type-container {
@@ -247,7 +322,7 @@ a {
 .project-card {
     display: flex;
     flex-direction: column;
-    margin: none;
+    margin: 0;
     border: solid 1px var(--border-dark);
     border-radius: 20px;
 }

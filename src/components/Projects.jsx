@@ -21,31 +21,13 @@ const Projects = () => {
       type: 'NodeJS',
     },
     {
-      name: "FRESH Activewear",
+      name: "FRESH",
       description:
         "Fake clothing store application built with React, uses react-router and fetches data from FakeStoreAPI.",
       image: "/fresh-desktop.jpg",
       source: "https://fresh-activewear.netlify.app/",
       code: 'https://github.com/rhysez/fake-clothing-store',
       type: 'React',
-    },
-    {
-      name: "PokeGuess",
-      description:
-        "Pokemon themed memory card game built with React, uses PokeAPI to asynchronously fetch pokemon data.",
-      image: "/poke-guess.png",
-      source: "https://pokemonguessr.netlify.app/",
-      code: 'https://github.com/rhysez/memory-card-game',
-      type: 'React',
-    },
-    {
-      name: "Weather.js",
-      description:
-        "Weather app built that uses asynchronous code to fetch real-time weather information using WeatherAPI.",
-      image: "/weather-desktop-example.png",
-      source: "https://rhysez.github.io/weather-app/",
-      code: 'https://github.com/rhysez/weather-app',
-      type: 'Vanilla JS',
     },
     {
       name: "Portfolio",
@@ -66,7 +48,7 @@ const Projects = () => {
 
   return (
     <>
-      <h2 className='projects-title'>Work</h2>
+      <h2 className='section-title'>Projects</h2>
       <section id="projects-container">{projectListAll}</section>
     </>
   );
