@@ -33,7 +33,7 @@ const Projects = () => {
       name: "Portfolio",
       description:
         "This website! It was built using React, and uses Vite as a bundler.",
-      image: "/portfolio-home.png",
+      image: "/portfolio.png",
       source: 'https://rhyshodgsondev.netlify.app/',
       code: 'https://github.com/rhysez/portfolio-updated',
       type: 'React',
