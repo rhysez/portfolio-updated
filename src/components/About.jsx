@@ -7,7 +7,7 @@ const About = () => {
                         View portfolio
                     </a>
                     <a className={'call-to-action'}
-                       href="https://medium.com/@rhyshodgson97/learn-web-development-on-your-coffee-break-preface-read-this-first-a0519581c805"
+                       href="https://rhyshodgsondev.hashnode.dev/"
                        target={'_blank'}
                     >
                         Read my blog

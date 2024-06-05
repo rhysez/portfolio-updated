@@ -21,7 +21,7 @@ const TopNav = () => {
                 <a href="https://github.com/rhysez" target="_blank">
                     <Icon path={mdiGithub} size={2} className="nav-social-option"/>
                 </a>
-                <a href="https://medium.com/@rhyshodgson97/learn-web-development-on-your-coffee-break-preface-read-this-first-a0519581c805" target="_blank">
+                <a href="https://rhyshodgsondev.hashnode.dev/" target="_blank">
                     <Icon path={mdiThoughtBubble} size={2} className="nav-social-option"/>
                 </a>
             </div>
