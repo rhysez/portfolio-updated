@@ -98,7 +98,7 @@ body {
 }
 
 .header-title {
-    font-size: 15rem;
+    font-size: 11rem;
     font-weight: 600;
     color: var(--background-dark);
     border-radius: 20px;
@@ -108,7 +108,7 @@ body {
 
 .header-subtitle {
     font-family: 'Noto Serif', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 7.5rem;
+    font-size: 5rem;
     font-weight: 400;
     color: var(--highlight-green);
     border-radius: 20px;
