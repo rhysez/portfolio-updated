@@ -3,18 +3,18 @@ import ProjectItem from "./ProjectItem.jsx";
 const Projects = () => {
   const projectList = [
     {
-      name: "Blogr",
+      name: "Spotify Insights",
         description:
-          "Blogging platform for reading, liking and commenting on blog posts. Built with MongoDB, Express, React and Node.",
-        image: "/blogr.jpg",
-        source: "https://blogr-client.netlify.app/",
-        code: 'https://github.com/rhysez/blogr-client',
+          "Data visualisation web app driven by Spotify's web API. Built with NextJS and PostgreSQL.",
+        image: "/spotify-insights.png",
+        source: "https://spotify-insights-three.vercel.app",
+        code: 'https://github.com/rhysez/spotify-insights',
         type: 'MERN',
     },
     {
     name: "MembersOnly",
       description:
-        "Mini social posting platform where users can create an account and upgrade their membership to make posts, and show them to others.",
+        "Private message board that allows users to become a club member and gain access to posts. Built with Express and MongoDB.",
       image: "/membersonly.jpg",
       source: "https://members-only-production-73c0.up.railway.app",
       code: 'https://github.com/rhysez/members-only',
@@ -23,7 +23,7 @@ const Projects = () => {
     {
       name: "FRESH",
       description:
-        "Fake clothing store application built with React, uses react-router and fetches data from FakeStoreAPI.",
+        "Fake clothing store that allows users to add, update and delete items from their shopping card. Built with React.",
       image: "/fresh-desktop.jpg",
       source: "https://fresh-activewear.netlify.app/",
       code: 'https://github.com/rhysez/fake-clothing-store',
