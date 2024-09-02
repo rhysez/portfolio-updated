@@ -98,7 +98,7 @@ body {
 }
 
 .header-title {
-    font-size: 11rem;
+    font-size: 6.5rem;
     font-weight: 600;
     color: var(--background-dark);
     border-radius: 20px;
@@ -108,7 +108,7 @@ body {
 
 .header-subtitle {
     font-family: 'Noto Serif', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
     color: var(--highlight-green);
     border-radius: 20px;
@@ -128,14 +128,6 @@ body {
 }
 
 @media (max-width: 900px) {
-    .header-title {
-        font-size: 8rem;
-    }
-
-    .header-subtitle {
-        font-size: 5rem;
-    }
-
     .header {
         gap: 7.5rem;
     }
@@ -194,7 +186,7 @@ body {
 
 .about-me {
     font-family: 'Noto Serif', system-ui, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 200;
     padding: 2rem;
     margin-top: 0;
@@ -215,7 +207,7 @@ body {
     color: var(--background-light);
     border: 0;
     border-radius: 9999px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 1rem 1.5rem;
     cursor: pointer;
     font-family: 'Noto Serif', system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -225,9 +217,6 @@ body {
     .about-me {
         width: 80%;
         font-size: 2.25rem;
-    }
-    .call-to-action-container {
-        flex-direction: column;
     }
 }
 
@@ -320,7 +309,7 @@ body {
 
 .section-title {
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     padding-bottom: 1.5rem;
     padding-top: 10rem;
     color: var(--background-dark);
