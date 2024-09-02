@@ -15,7 +15,7 @@ const About = () => {
                 </div>
                 <p className='about-me'>
                     I&apos;m a software engineer who loves collaborating with others to build real full stack
-                    applications that solve real world problems. Currently working at a small tech start-up
+                    applications that solve real world problems. Currently working at Quantavia, a software company
                     specialising in the aviation industry. I&apos;ve built some cool stuff of my own too, so feel free
                     to check that out below.
                 </p>

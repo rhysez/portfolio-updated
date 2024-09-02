@@ -6,10 +6,10 @@ const Experience = () => {
         <>
             <h1 className={"section-title"}>Experience</h1>
             <JobCard
-                companyTitle={'HeliCrewManager'}
+                companyTitle={'Quantavia (formerly HeliCrewManager)'}
                 jobTitle={'Full Stack Engineer'}
-                jobDescription={'Integral role in building and re-writing the company SaaS application using TypeScript, NextJS and Laravel. ' +
-                    'I have also spearheaded the ongoing development of the FCM Hub mobile app, which has been built with React Native.'}
+                jobDescription={'Integral role in building and maintaining SaaS applications using TypeScript, NextJS and Laravel. ' +
+                    'I have also spearheaded the ongoing development of the FCM Hub mobile app, which has been successfully deployed to both App Store and Google Play Store.'}
                 tags={['TypeScript', 'React', 'React Native', 'NextJS', 'Laravel', 'Tailwind CSS', 'MySQL']}
                 dates={['January 2024', 'Present']}
                 companyWebsite={'https://helicrewmanager.com/'}

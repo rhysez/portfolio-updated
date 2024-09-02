@@ -30,13 +30,13 @@ const Projects = () => {
       type: 'React',
     },
     {
-      name: "Portfolio",
+      name: "Battleship",
       description:
-        "This website! It was built using React, and uses Vite as a bundler.",
-      image: "/portfolio.png",
-      source: 'https://rhyshodgsondev.netlify.app/',
-      code: 'https://github.com/rhysez/portfolio-updated',
-      type: 'React',
+        "Play battleship against a simple AI! This project was written with object-oriented vanilla JavaScript patterns and bundled with Vite.",
+      image: "/battleship-example.png",
+      source: 'https://kaleidoscopic-sunflower-dd6e76.netlify.app/',
+      code: 'https://github.com/rhysez/battleship',
+      type: 'Vanilla',
     },
   ];
 
