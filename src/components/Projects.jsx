@@ -5,7 +5,7 @@ const Projects = () => {
     {
       name: "Spotify Insights",
         description:
-          "Data visualisation web app driven by Spotify's web API. Built with NextJS and PostgreSQL.",
+          "Data visualisation web app that provides tailor-made music insights for the user. Built with NextJS and PostgreSQL.",
         image: "/spotify-insights.png",
         source: "https://spotify-insights-three.vercel.app",
         code: 'https://github.com/rhysez/spotify-insights',
@@ -49,7 +49,9 @@ const Projects = () => {
   return (
     <section id={'projects'}>
       <h2 className='section-title'>Projects</h2>
-      <section id="projects-container">{projectListAll}</section>
+      <section id="projects-container">
+        {projectListAll}
+      </section>
     </section>
   );
 };

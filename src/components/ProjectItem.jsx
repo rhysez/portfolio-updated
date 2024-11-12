@@ -1,6 +1,6 @@
 
 // eslint-disable-next-line react/prop-types
-const ProjectItem = ({key, image, name, description, code, source}) => {
+const ProjectItem = ({key, image, name, description, code, source,}) => {
     return (
         <section className='project-card' key={key}>
             <div

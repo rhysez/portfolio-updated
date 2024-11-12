@@ -1,5 +1,4 @@
 
-
 const JobCard = ({companyTitle, jobTitle, jobDescription, tags, dates, companyWebsite}) => {
     return (
         <section className={'job-card'}>
@@ -21,7 +20,7 @@ const JobCard = ({companyTitle, jobTitle, jobDescription, tags, dates, companyWe
                 <p className={'job-description'}>{jobDescription}</p>
             </div>
             <div className={'job-tags-container'}>
-            {
+                {
                     tags.map((item, index) => {
                         return (
                             <div className={'job-tag'} key={index}>
