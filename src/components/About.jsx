@@ -4,7 +4,7 @@ const About = () => {
             <section id='about-container'>
                 <div className={'call-to-action-container'}>
                     <a className={'call-to-action'} href="#projects">
-                        View latest project
+                        View portfolio
                     </a>
                     <a className={'call-to-action'}
                        href="https://rhyshodgsondev.hashnode.dev/"
